@@ -220,7 +220,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/tin-tuc/cam-nang/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    Cẩm nang
+                    C��m nang
                   </a>
                 </li>
               </ul>
@@ -251,7 +251,7 @@ const Header = () => {
               </a>
             </li>
 
-            {/* Li��n kết với dropdown */}
+            {/* Liên kết với dropdown */}
             <li className="menu-item menu-item-has-children relative group">
               <a
                 href="#"
@@ -442,11 +442,11 @@ const PostsSection = () => {
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032810-cover-post-428x199.jpg"
                 alt="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
@@ -484,11 +484,11 @@ const PostsSection = () => {
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/SeaTalk_IMG_20250708_115413-1-428x199.jpg"
                 alt="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4" style={{ color: "#0f172a" }}>
@@ -527,11 +527,11 @@ const PostsSection = () => {
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/06/IMG-HOR-0860x0400-030636-cover-post-428x199.jpg"
                 alt="SỔ SỨ MỆNH 79"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
@@ -569,11 +569,11 @@ const PostsSection = () => {
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032815-cv-post-428x199.jpg"
                 alt="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
