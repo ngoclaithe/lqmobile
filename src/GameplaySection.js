@@ -121,88 +121,11 @@ const GameplaySection = () => {
       link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/ming/",
     },
     {
-      name: "Bijan",
-      type: [28],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/856d30cb10953b9480dce5c5470bf81c658d50d87305a1.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/bijan/",
-    },
-    {
-      name: "Bonnie",
-      type: [29],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/a2ed1b1815df9c719e4f9b4be5eb3a74658d4cd7d3ef61.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/bonnie/",
-    },
-    {
-      name: "Teeri",
+      name: "Valhein",
       type: [33],
       image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/3499773a79087475e48194e0fd02e27d658d428c2cbe51.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/teeri/",
-    },
-    {
-      name: "Yue",
-      type: [29],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/3ee26051086fee856dc6df74811e9e35658d4142ce14c1.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/yue/",
-    },
-    {
-      name: "Yan",
-      type: [28],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/f9471319a98fac8dce266dc86cd1efea658d4042ae0051.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/yan/",
-    },
-    {
-      name: "Aya",
-      type: [30],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/d4510fa53f153c5e259543597c96bb88658d3efcbcd0f1.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/",
-    },
-    {
-      name: "Aoi",
-      type: [32],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/f1db425eba8ea88e5d4d8427c1706bcf6100183de1cc11.jpeg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aoi/",
-    },
-    {
-      name: "Iggy",
-      type: [29],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/b4563fbfd5756caeea04b7ef488ee39f60fffd803e9ab1.jpeg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/iggy/",
-    },
-    {
-      name: "Bright",
-      type: [33],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/0045a9d59dc140647f4fa67b446c732c5fc55919650441.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/bright/",
-    },
-    {
-      name: "Lorion",
-      type: [29],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/dab2c45af3206cd0ac30b450357aa8ce5fc5264d71f451.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/lorion/",
-    },
-    {
-      name: "Dextra",
-      type: [28],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/38f3158929eb4b95500db65559e52d525fc5244a521d11.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/dextra/",
-    },
-    {
-      name: "Sinestrea",
-      type: [32],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/680ef284724e077237f33cfc2d8fa72d5fa194bad60f31.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/sinestrea/",
+        "https://lienquan.garena.vn/wp-content/uploads/2024/05/4b36c6e5e2d1ce9dd9e2841d2902043c5ee04efeb2f2d1.jpg",
+      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/",
     },
     {
       name: "Arthur",
@@ -217,13 +140,6 @@ const GameplaySection = () => {
       image:
         "https://lienquan.garena.vn/wp-content/uploads/2024/05/7f04b1fd7f0520dd1ccbd1caad6faf1a5847d3f72e85b1.png",
       link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/",
-    },
-    {
-      name: "Valhein",
-      type: [33],
-      image:
-        "https://lienquan.garena.vn/wp-content/uploads/2024/05/4b36c6e5e2d1ce9dd9e2841d2902043c5ee04efeb2f2d1.jpg",
-      link: "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/",
     },
   ];
 
