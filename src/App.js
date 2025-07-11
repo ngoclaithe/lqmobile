@@ -415,7 +415,7 @@ const HeroSlider = () => {
             className="owl-dot active"
             style={{
               backgroundImage:
-                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot-active.png)",
               backgroundPosition: "0px 0px",
               backgroundSize: "100% 100%",
               fontFamily: "UTM Helve",
@@ -495,7 +495,7 @@ const PostsSection = () => {
             <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032810-cover-post-428x199.jpg"
-                alt="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
+                alt="CHI TIẾT BẢN C���P NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
