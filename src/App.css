@@ -43,6 +43,7 @@
   background-image: url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-home-heroes.jpg");
   background-position: 0px 0px;
   background-size: 100% 100%;
+  background-repeat: no-repeat;
   display: flex;
   font-family: UTM Helve;
   font-size: 1.1575px;
@@ -51,6 +52,8 @@
   line-height: 1.389px;
   margin: 0px 0px 0.289375px;
   text-align: left;
+  height: 200px;
+  width: 100%;
 }
 
 .title {
@@ -67,4 +70,5 @@
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
