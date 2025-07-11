@@ -409,16 +409,66 @@ const HeroSlider = () => {
         </div>
 
         {/* Owl Dots Navigation */}
-        <div className="owl-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-          <button role="button" className="owl-dot active">
-            <span className="block w-3 h-3 bg-yellow-400 rounded-full"></span>
-          </button>
-          <button role="button" className="owl-dot">
-            <span className="block w-3 h-3 bg-white/50 rounded-full"></span>
-          </button>
-          <button role="button" className="owl-dot">
-            <span className="block w-3 h-3 bg-white/50 rounded-full"></span>
-          </button>
+        <div className="owl-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex z-10">
+          <button
+            role="button"
+            className="owl-dot active"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+            }}
+          ></button>
+          <button
+            role="button"
+            className="owl-dot"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+              opacity: "0.5",
+            }}
+          ></button>
+          <button
+            role="button"
+            className="owl-dot"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+              opacity: "0.5",
+            }}
+          ></button>
         </div>
       </div>
     </section>
