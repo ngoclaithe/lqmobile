@@ -978,20 +978,55 @@ const HeroesSection = () => {
           </li>
         </ul>
         <div className="p-home__heroes--list">
-          <a href="#hero-1">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/3fa6fb1c1695570e79df259229e7a6c9583ff18becc9f1.png" />
+          <a
+            href="#hero-1"
+            className={activeHero === 1 ? "active" : ""}
+            onClick={(e) => handleHeroClick(1, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/3fa6fb1c1695570e79df259229e7a6c9583ff18becc9f1.png"
+              alt="Krixi thumbnail"
+            />
           </a>
-          <a href="#hero-2" className="active">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/83d9de6ce9963f9ea406db2edd81707f5ee04e755f2a71-2.jpg" />
+          <a
+            href="#hero-2"
+            className={activeHero === 2 ? "active" : ""}
+            onClick={(e) => handleHeroClick(2, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/83d9de6ce9963f9ea406db2edd81707f5ee04e755f2a71-2.jpg"
+              alt="Valhein thumbnail"
+            />
           </a>
-          <a href="#hero-3">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/8decfe0a19adf4c0db504a34dedb271e658d3f1133b0a1.jpg" />
+          <a
+            href="#hero-3"
+            className={activeHero === 3 ? "active" : ""}
+            onClick={(e) => handleHeroClick(3, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/8decfe0a19adf4c0db504a34dedb271e658d3f1133b0a1.jpg"
+              alt="Aya thumbnail"
+            />
           </a>
-          <a href="#hero-4">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/6ee0ca6c7839effd7b244bbe29f50a9e5d256414acc441.jpg" />
+          <a
+            href="#hero-4"
+            className={activeHero === 4 ? "active" : ""}
+            onClick={(e) => handleHeroClick(4, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/6ee0ca6c7839effd7b244bbe29f50a9e5d256414acc441.jpg"
+              alt="Triêu Vân thumbnail"
+            />
           </a>
-          <a href="#hero-5">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Honeyview_Arthur_111-e1718875297358.jpg" />
+          <a
+            href="#hero-5"
+            className={activeHero === 5 ? "active" : ""}
+            onClick={(e) => handleHeroClick(5, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Honeyview_Arthur_111-e1718875297358.jpg"
+              alt="Arthur thumbnail"
+            />
           </a>
         </div>
       </div>
