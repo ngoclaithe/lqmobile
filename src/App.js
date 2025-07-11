@@ -480,7 +480,7 @@ const PostsSection = () => {
           {/* Post 2 */}
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
-            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ S��P SÀN"
+            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
@@ -613,21 +613,32 @@ const PostsSection = () => {
             style={{
               width: "278px",
               height: "61px",
-              display: "flex",
+              display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "#edbe80",
-              fontSize: "20.75px",
+              color: "rgb(237, 190, 128)",
+              fontSize: "21px",
               fontWeight: "700",
-              transition: "all 300ms ease",
-              background:
-                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png) 0 0 / 100% 100% no-repeat",
+              lineHeight: "31px",
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png)",
+              backgroundPosition: "0px 0px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "100% 100%",
               fontFamily: '"UTM Helve", sans-serif',
               textDecoration: "none",
             }}
           >
             Xem thêm
           </a>
+          <div
+            style={{
+              fontWeight: "400",
+              textAlign: "center",
+              pointerEvents: "auto",
+            }}
+          />
         </div>
       </div>
     </section>
