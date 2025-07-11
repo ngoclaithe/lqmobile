@@ -159,92 +159,75 @@ const GameplaySection = () => {
         <span className="title">Gameplay</span>
       </h2>
       <div className="p-home__gameplay--main">
-        <ul className="academy-menu">
-          <li
-            id="menu-item-1711"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1711"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/tuong-skin/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-heroes.png"
-                alt="Tướng/Skin"
-              />
-              <span>Tướng/Skin</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-5233"
-            className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5233"
-          >
-            <a href="https://skin.lienquan.garena.vn/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-heroes.png"
-                alt="Trang phục"
-              />
-              <span>Trang phục</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-1712"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1712"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/trang-bi/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-items.png"
-                alt="Trang Bị"
-              />
-              <span>Trang Bị</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-1716"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1716"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/bang-ngoc/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-runes.png"
-                alt="Bảng ngọc"
-              />
-              <span>Bảng ngọc</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-1713"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1713"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/phu-tro/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-extra-skills.png"
-                alt="Phụ Trợ"
-              />
-              <span>Phụ Trợ</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-1714"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1714"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/phu-hieu/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-badges.png"
-                alt="Phù Hiệu"
-              />
-              <span>Phù Hiệu</span>
-            </a>
-          </li>
-          <li
-            id="menu-item-1715"
-            className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715"
-          >
-            <a href="https://lienquan.garena.vn/hoc-vien/che-do-choi/">
-              <img
-                src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay-modes.png"
-                alt="Chế độ chơi"
-              />
-              <span>Chế độ chơi</span>
-            </a>
-          </li>
-        </ul>
+        <div className="academy-menu">
+          <ul className="academy-menu-list">
+            <li
+              className={activeMenu === 0 ? "active" : ""}
+              onClick={() => setActiveMenu(0)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/tuong-skin/">
+                <span>Tướng/Skin</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 1 ? "active" : ""}
+              onClick={() => setActiveMenu(1)}
+            >
+              <a href="https://skin.lienquan.garena.vn/">
+                <span>Trang phục</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 2 ? "active" : ""}
+              onClick={() => setActiveMenu(2)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/trang-bi/">
+                <span>Trang Bị</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 3 ? "active" : ""}
+              onClick={() => setActiveMenu(3)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/bang-ngoc/">
+                <span>Bảng ngọc</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 4 ? "active" : ""}
+              onClick={() => setActiveMenu(4)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/phu-tro/">
+                <span>Phụ Trợ</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 5 ? "active" : ""}
+              onClick={() => setActiveMenu(5)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/phu-hieu/">
+                <span>Phù Hiệu</span>
+              </a>
+            </li>
+            <li
+              className={activeMenu === 6 ? "active" : ""}
+              onClick={() => setActiveMenu(6)}
+            >
+              <a href="https://lienquan.garena.vn/hoc-vien/che-do-choi/">
+                <span>Chế độ chơi</span>
+              </a>
+            </li>
+          </ul>
+          <div className="academy-menu-dots">
+            {[0, 1, 2, 3, 4, 5, 6].map((index) => (
+              <button
+                key={index}
+                className={`dot ${activeMenu === index ? "active" : ""}`}
+                onClick={() => setActiveMenu(index)}
+              ></button>
+            ))}
+          </div>
+        </div>
 
         <div className="p-home__gameplay--content">
           <section className="st-heroes">
