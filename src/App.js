@@ -6,7 +6,7 @@ import GameplaySection from "./GameplaySection";
 // Download Widget Component
 const DownloadWidget = () => {
   return (
-    <div className="fixed top-4 right-4 z-50 hidden lg:block">
+    <div className="fixed top-8 right-4 z-50 hidden lg:block">
       {/* 18+ Warning */}
       <div className="mb-3" style={{ marginLeft: "27.2012px" }}>
         <img
