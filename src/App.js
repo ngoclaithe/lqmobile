@@ -425,79 +425,110 @@ const HeroSlider = () => {
   );
 };
 
-// News Cards Component
-const NewsCards = () => {
+// Posts Section Component
+const PostsSection = () => {
   return (
-    <section className="bg-slate-900 py-12">
+    <section className="p-home__posts bg-slate-900 py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Card 1 */}
-          <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg overflow-hidden group hover:scale-105 transition-transform">
-            <div className="h-40 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="text-white text-center z-10">
-                <div className="text-lg font-bold">CHI TIẾT</div>
-                <div className="text-lg font-bold">BẢN CẬP NHẬT</div>
-              </div>
-            </div>
-            <div className="p-4 bg-slate-800">
-              <div className="text-gray-400 text-xs mb-2">08.07.2025</div>
-              <h3 className="text-white text-sm font-bold leading-tight">
+        <h2 className="p-home__posts--title title mo text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          Tin tức nổi bật
+        </h2>
+
+        <div className="p-home__posts--list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          {/* Post 1 */}
+          <a
+            href="https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-ngay-hoi-lien-quan-9-7-2025/"
+            title="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
+            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+          >
+            <picture className="block">
+              <img
+                src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032810-cover-post-428x199.jpg"
+                alt="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
+                className="w-full h-48 object-cover"
+              />
+            </picture>
+            <div className="p-4">
+              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
+              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
                 CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025
               </h3>
             </div>
-          </div>
+          </a>
 
-          {/* Card 2 */}
-          <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg overflow-hidden group hover:scale-105 transition-transform">
-            <div className="h-40 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="text-white text-center z-10">
-                <div className="text-lg font-bold">TỔNG HỢP SỰ KIỆN</div>
-                <div className="text-sm">NGÀY HỘI LIÊN QUÂN</div>
-              </div>
-            </div>
-            <div className="p-4 bg-slate-800">
-              <div className="text-gray-400 text-xs mb-2">08.07.2025</div>
-              <h3 className="text-white text-sm font-bold leading-tight">
-                TỔNG HỢP SỰ KIỆN - NGÀY HỘI LIÊN QUÂN - HỆ XẤP XINH - QUÀ HOT
+          {/* Post 2 */}
+          <a
+            href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
+            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
+            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+          >
+            <picture className="block">
+              <img
+                src="https://lienquan.garena.vn/wp-content/uploads/2025/07/SeaTalk_IMG_20250708_115413-1-428x199.jpg"
+                alt="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
+                className="w-full h-48 object-cover"
+              />
+            </picture>
+            <div className="p-4">
+              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
+              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+                TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP
+                SÀN
               </h3>
             </div>
-          </div>
+          </a>
 
-          {/* Card 3 */}
-          <div className="bg-gradient-to-br from-amber-600 to-orange-700 rounded-lg overflow-hidden group hover:scale-105 transition-transform">
-            <div className="h-40 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="text-white text-center z-10">
-                <div className="text-2xl font-bold text-black">THIỆN ĐÁNG</div>
-                <div className="text-xl font-bold">SỨ MỆNH 79</div>
-              </div>
-            </div>
-            <div className="p-4 bg-slate-800">
-              <div className="text-gray-400 text-xs mb-2">27.06.2025</div>
-              <h3 className="text-white text-sm font-bold leading-tight">
-                SỨ MỆNH 79
+          {/* Post 3 */}
+          <a
+            href="https://lienquan.garena.vn/so-su-menh-79/"
+            title="SỔ SỨ MỆNH 79"
+            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+          >
+            <picture className="block">
+              <img
+                src="https://lienquan.garena.vn/wp-content/uploads/2025/06/IMG-HOR-0860x0400-030636-cover-post-428x199.jpg"
+                alt="SỔ SỨ MỆNH 79"
+                className="w-full h-48 object-cover"
+              />
+            </picture>
+            <div className="p-4">
+              <p className="text-gray-400 text-sm mb-2">27.06.2025</p>
+              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+                SỔ SỨ MỆNH 79
               </h3>
             </div>
-          </div>
+          </a>
 
-          {/* Card 4 */}
-          <div className="bg-gradient-to-br from-teal-600 to-blue-700 rounded-lg overflow-hidden group hover:scale-105 transition-transform">
-            <div className="h-40 bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="text-white text-center z-10">
-                <div className="text-lg font-bold">QUY TRÌNH</div>
-                <div className="text-lg font-bold">CẬP NHẬT PHIÊN BẢN</div>
-              </div>
-            </div>
-            <div className="p-4 bg-slate-800">
-              <div className="text-gray-400 text-xs mb-2">07.07.2025</div>
-              <h3 className="text-white text-sm font-bold leading-tight">
-                QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN - 9.7.2025
+          {/* Post 4 */}
+          <a
+            href="https://lienquan.garena.vn/quy-trinh-cap-nhat-phien-ban-ngay-hoi-lien-quan-9-7-2025/"
+            title="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
+            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+          >
+            <picture className="block">
+              <img
+                src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032815-cv-post-428x199.jpg"
+                alt="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
+                className="w-full h-48 object-cover"
+              />
+            </picture>
+            <div className="p-4">
+              <p className="text-gray-400 text-sm mb-2">07.07.2025</p>
+              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+                QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025
               </h3>
             </div>
-          </div>
+          </a>
+        </div>
+
+        <div className="text-center">
+          <a
+            href="https://lienquan.garena.vn/tin-tuc/"
+            className="p-home__posts--btn btn-more inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 rounded-lg transition-colors"
+            title="Xem thêm"
+          >
+            Xem thêm
+          </a>
         </div>
       </div>
     </section>
