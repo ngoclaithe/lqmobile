@@ -1055,6 +1055,7 @@ function App() {
       <HeroSlider />
       <PostsSection />
       <HeroesSection />
+      <GameplaySection />
       <Footer />
     </div>
   );
