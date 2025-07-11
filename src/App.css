@@ -72,3 +72,37 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Hero Name Styles */
+.p-home__hero--name {
+  color: #edbe80;
+  font-family: UTM Helve;
+  font-size: 26.0438px;
+  font-weight: 700;
+  line-height: 28.6481px;
+  margin: 0px 0px 16.205px;
+  text-align: left;
+}
+
+/* Hero Role P Tag Styles */
+.p-home__hero--role p {
+  color: #fff;
+  font-family: UTM Helve;
+  font-size: 14.4687px;
+  line-height: 17.3625px;
+  margin: 0px 0px 0px 9.26px;
+  text-align: left;
+}
+
+/* Hero List Styles */
+@media (min-width: 750px) {
+  .p-home__heroes--list {
+    bottom: 51rem;
+    right: 213rem;
+  }
+}
+
+.p-home__heroes--list {
+  display: flex;
+  position: absolute;
+}
