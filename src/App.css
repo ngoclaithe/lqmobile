@@ -230,13 +230,11 @@
 .p-home__heroes--list {
   position: absolute;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 5rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   z-index: 3;
-  justify-content: center;
 }
 
 .p-home__heroes--list a {
