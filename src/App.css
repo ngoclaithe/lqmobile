@@ -602,7 +602,7 @@
 .st-heroes__types {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   list-style: none;
   margin: 0;
