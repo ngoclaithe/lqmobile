@@ -468,3 +468,288 @@
     align-items: center;
   }
 }
+
+/* Gameplay Section Styles */
+.p-home__gameplay {
+  width: 100%;
+  background: #212222;
+  padding: 80px 0;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .p-home__gameplay {
+    min-height: 1062px;
+    padding-top: 80px;
+    background: url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-academy.jpg")
+      center top / 100% auto no-repeat;
+  }
+}
+
+.p-home__gameplay--title {
+  margin-bottom: 3rem;
+}
+
+.p-home__gameplay--main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.academy-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.academy-menu li {
+  margin: 0;
+}
+
+.academy-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.academy-menu a:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.academy-menu img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.academy-menu span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.p-home__gameplay--content {
+  margin-bottom: 3rem;
+}
+
+.st-heroes__bar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 5px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 20px;
+  height: 20px;
+}
+
+.st-heroes__types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.st-heroes__types li {
+  margin: 0;
+}
+
+.st-heroes__types a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.st-heroes__types a:hover,
+.st-heroes__types a.active {
+  background: rgba(237, 190, 128, 0.2);
+  border-color: #edbe80;
+  color: #edbe80;
+}
+
+.st-heroes__types img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.st-heroes__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.st-heroes__item {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.st-heroes__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.st-heroes__item--img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.st-heroes__item--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.st-heroes__item:hover .st-heroes__item--img img {
+  transform: scale(1.1);
+}
+
+.st-heroes__item--name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.p-home__gameplay--btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 278px;
+  height: 61px;
+  color: rgb(237, 190, 128);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 31px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "UTM Helve", sans-serif;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.p-home__gameplay--btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Gameplay */
+@media (max-width: 768px) {
+  .p-home__gameplay {
+    padding: 40px 0;
+  }
+
+  .academy-menu {
+    gap: 1rem;
+  }
+
+  .academy-menu a {
+    padding: 0.5rem;
+  }
+
+  .academy-menu img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .academy-menu span {
+    font-size: 12px;
+  }
+
+  .st-heroes__bar {
+    gap: 1rem;
+  }
+
+  .st-heroes__types {
+    gap: 0.5rem;
+  }
+
+  .st-heroes__types a {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+
+  .st-heroes__list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .st-heroes__item--img {
+    height: 150px;
+  }
+
+  .st-heroes__item--name {
+    font-size: 12px;
+    padding: 0.75rem;
+  }
+}
