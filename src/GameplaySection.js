@@ -293,18 +293,6 @@ const GameplaySection = () => {
                   flexDirection: "row !important",
                 }}
               >
-                <li>
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setActiveFilter("all");
-                    }}
-                    className={activeFilter === "all" ? "active" : ""}
-                  >
-                    Tất cả
-                  </a>
-                </li>
                 {heroTypes.map((type) => (
                   <li key={type.id}>
                     <a
