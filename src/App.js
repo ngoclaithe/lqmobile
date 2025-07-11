@@ -38,9 +38,6 @@ const DownloadWidget = () => {
           textAlign: "center",
         }}
       >
-        <div className="text-center mb-2">
-          <div className="text-white font-bold text-xs">TẢI GAME</div>
-        </div>
 
         {/* QR Code */}
         <div className="download__qr mb-2 flex justify-center">

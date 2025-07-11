@@ -526,10 +526,10 @@
 .academy-menu li:not(:last-child)::after {
   content: "";
   position: absolute;
-  left: 20px;
-  top: 26px;
+  left: 26px;
+  top: 29px;
   width: 2px;
-  height: calc(100% + 1rem - 6px);
+  height: calc(100% + 1rem - 4px);
   background: rgba(255, 255, 255, 0.3);
   z-index: 0;
 }
