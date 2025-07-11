@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const GameplaySection = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
+  const [activeMenu, setActiveMenu] = useState(0);
 
   const heroTypes = [
     {
