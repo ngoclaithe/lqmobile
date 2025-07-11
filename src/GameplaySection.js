@@ -247,7 +247,17 @@ const GameplaySection = () => {
 
         <div className="p-home__gameplay--content">
           <section className="st-heroes">
-            <div className="st-heroes__bar">
+            <div
+              className="st-heroes__bar"
+              style={{
+                display: "flex",
+                fontSize: "13.3917px",
+                justifyContent: "space-between",
+                lineHeight: "20.0875px",
+                margin: "0px 0px 24.7746px",
+                textAlign: "left",
+              }}
+            >
               <div className="search">
                 <input
                   type="text"
