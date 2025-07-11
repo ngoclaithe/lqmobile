@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 
 // Download Widget Component
 const DownloadWidget = () => {
