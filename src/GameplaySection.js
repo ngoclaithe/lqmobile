@@ -247,8 +247,25 @@ const GameplaySection = () => {
 
         <div className="p-home__gameplay--content">
           <section className="st-heroes">
-            <div className="st-heroes__bar">
-              <div className="search">
+            <div
+              className="st-heroes__bar"
+              style={{
+                display: "flex !important",
+                fontSize: "13.3917px",
+                justifyContent: "space-between",
+                lineHeight: "20.0875px",
+                margin: "0px 0px 24.7746px",
+                textAlign: "left",
+                flexWrap: "nowrap !important",
+                alignItems: "center",
+                width: "100%",
+                flexDirection: "row !important",
+              }}
+            >
+              <div
+                className="search"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <input
                   type="text"
                   placeholder="Tìm kiếm tướng"
@@ -262,7 +279,20 @@ const GameplaySection = () => {
                   />
                 </button>
               </div>
-              <ul className="st-heroes__types">
+              <ul
+                className="st-heroes__types"
+                style={{
+                  display: "flex !important",
+                  alignItems: "center",
+                  margin: 0,
+                  padding: 0,
+                  listStyle: "none",
+                  flexWrap: "nowrap !important",
+                  gap: "10px",
+                  whiteSpace: "nowrap",
+                  flexDirection: "row !important",
+                }}
+              >
                 <li>
                   <a
                     href="#"
