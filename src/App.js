@@ -328,59 +328,92 @@ function App() {
         </div>
       </header>
 
-      {/* Hero Banner - Full Screen */}
-      <section className="relative h-screen bg-gradient-to-br from-purple-800 via-blue-800 to-purple-900 overflow-hidden">
-        {/* Background character image - Full screen */}
-        <div className="absolute inset-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F81709d0769604a919ab5f926606b1868%2F4833f1f36d3d465bbff4b8816b227e42?format=webp&width=800"
-            alt="Hero Character"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/50 via-transparent to-blue-900/50"></div>
-        </div>
+      {/* Image Slider Section */}
+      <section className="relative">
+        <div className="slider-container relative overflow-hidden">
+          {/* Slide 1 */}
+          <div className="slide active">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/02/IMG-HOR-1920x0350-032070-cover-hp.jpg"
+              alt="Liên Quân Slide 1"
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: "350px" }}
+            />
+          </div>
 
-        {/* Center Logo */}
-        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
-          <div className="text-white text-3xl font-bold flex items-center justify-center mb-4">
+          {/* Slide 2 */}
+          <div className="slide hidden">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2025/06/IMG-HOR-1920x0350-027303-cover-trang-chu.jpg"
+              alt="Liên Quân Slide 2"
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: "350px" }}
+            />
+          </div>
+
+          {/* Slide 3 */}
+          <div className="slide hidden">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/02/Cover-homepage_1920x350-7.png"
+              alt="Liên Quân Slide 3"
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: "350px" }}
+            />
+          </div>
+
+          {/* Slider Navigation Dots */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+            <button
+              className="slider-dot w-3 h-3 bg-yellow-400 rounded-full opacity-100"
+              data-slide="0"
+            ></button>
+            <button
+              className="slider-dot w-3 h-3 bg-white rounded-full opacity-50"
+              data-slide="1"
+            ></button>
+            <button
+              className="slider-dot w-3 h-3 bg-white rounded-full opacity-50"
+              data-slide="2"
+            ></button>
+          </div>
+
+          {/* Prev/Next buttons */}
+          <button
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition z-10"
+            id="prevBtn"
+          >
             <svg
-              className="w-8 h-8 text-yellow-400 mr-3"
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
-              fill="currentColor"
             >
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" />
-              <path d="M2 17L12 22L22 17" />
-              <path d="M2 12L12 17L22 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
-            LIÊN QUÂN
-          </div>
-        </div>
-
-        {/* Main Hero Content - Center */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-center text-white">
-            <div className="mb-6">
-              <span className="bg-yellow-500 text-black px-6 py-2 rounded-full text-sm font-bold">
-                PHIÊN BẢN MỚI
-              </span>
-            </div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 leading-tight">
-              <span className="text-yellow-400 block">NGÀY HỘI</span>
-              <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent block">
-                LIÊN QUÂN 09.07
-              </span>
-            </h1>
-            <div className="text-3xl text-yellow-300 italic font-bold">
-              Kiệm
-            </div>
-          </div>
-        </div>
-
-        {/* Pagination dots - Bottom center */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-          <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
-          <div className="w-4 h-4 bg-white/40 rounded-full"></div>
-          <div className="w-4 h-4 bg-white/40 rounded-full"></div>
+          </button>
+          <button
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition z-10"
+            id="nextBtn"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
       </section>
 
