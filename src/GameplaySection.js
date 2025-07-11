@@ -250,14 +250,16 @@ const GameplaySection = () => {
             <div
               className="st-heroes__bar"
               style={{
-                display: "flex",
+                display: "flex !important",
                 fontSize: "13.3917px",
                 justifyContent: "space-between",
                 lineHeight: "20.0875px",
                 margin: "0px 0px 24.7746px",
                 textAlign: "left",
-                flexWrap: "nowrap",
+                flexWrap: "nowrap !important",
                 alignItems: "center",
+                width: "100%",
+                flexDirection: "row !important",
               }}
             >
               <div
