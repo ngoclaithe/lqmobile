@@ -686,13 +686,15 @@
 }
 
 .st-heroes__item--name {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0.5rem;
+  width: 90px;
+  height: 13px;
+  color: #7f7f7f;
+  font-family: UTM Helve;
+  font-size: 10.7133px;
+  font-weight: 500;
+  line-height: 12.856px;
+  margin: 3.34792px 0px 0.334792px;
   text-align: center;
-  line-height: 1.2;
 }
 
 .p-home__gameplay--btn {
