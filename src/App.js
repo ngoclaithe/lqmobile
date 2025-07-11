@@ -3,36 +3,39 @@ import "./App.css";
 function App() {
   return (
     <div className="min-h-screen bg-slate-900">
-      {/* Fixed QR Code Download - Top Right Corner */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* Fixed QR Code Download - Top Right Corner - Hide on mobile */}
+      <div className="fixed top-4 right-4 z-50 hidden lg:block">
         {/* 18+ Warning */}
-        <div className="mb-2">
+        <div className="mb-1">
           <img
             src="https://dl.ops.kgvn.garenanow.com/hok/DailyActivity/18%2B.png"
             alt="18+ Warning"
-            className="w-auto h-auto"
+            className="w-20 h-auto"
           />
         </div>
 
         {/* Download Section */}
-        <section className="download pc bg-red-600 rounded-lg p-3 shadow-lg">
-          <div className="text-center mb-3">
-            <div className="text-white font-bold text-sm">TẢI GAME</div>
+        <section
+          className="download pc bg-red-600 rounded-lg p-2 shadow-lg"
+          style={{ width: "90px" }}
+        >
+          <div className="text-center mb-2">
+            <div className="text-white font-bold text-xs">TẢI GAME</div>
           </div>
 
           {/* QR Code */}
-          <div className="download__qr mb-3 flex justify-center">
+          <div className="download__qr mb-2 flex justify-center">
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/07/QRCode.png"
               alt="QR Code"
-              className="w-20 h-20"
+              className="w-14 h-14"
             />
           </div>
 
           {/* Google Play Button */}
           <a
             href="https://play.google.com/store/apps/details?id=com.garena.game.kgvn&hl=vi"
-            className="download__google block mb-2"
+            className="download__google block mb-1"
             target="_blank"
             rel="noopener noreferrer"
           >
