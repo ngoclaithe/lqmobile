@@ -256,6 +256,8 @@ const GameplaySection = () => {
                 lineHeight: "20.0875px",
                 margin: "0px 0px 24.7746px",
                 textAlign: "left",
+                flexWrap: "nowrap",
+                alignItems: "center",
               }}
             >
               <div
@@ -264,7 +266,7 @@ const GameplaySection = () => {
               >
                 <input
                   type="text"
-                  placeholder="Tìm ki��m tướng"
+                  placeholder="Tìm kiếm tướng"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
