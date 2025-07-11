@@ -80,8 +80,9 @@
 /* Heroes Main Container */
 .p-home__heroes--main {
   position: relative;
-  height: 70vh;
-  padding-bottom: 120px;
+  height: 85vh;
+  min-height: 600px;
+  padding-bottom: 0;
 }
 
 /* Heroes Content Container */
