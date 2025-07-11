@@ -616,15 +616,15 @@
 .st-heroes__types a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 10px 15px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  color: #797979;
+  font-family: UTM Helve;
+  font-size: 12.0525px;
+  line-height: 18.0788px;
+  text-align: left;
   text-decoration: none;
-  color: #fff;
-  font-size: 12px;
+  padding: 10px 15px;
+  gap: 0.5rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
 }
 
 .st-heroes__types a:hover,
