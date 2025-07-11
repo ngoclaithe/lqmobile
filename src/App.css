@@ -36,3 +36,73 @@
     transform: rotate(360deg);
   }
 }
+
+/* Heroes Section Styles */
+.p-home__heroes--title {
+  align-items: center;
+  background-image: url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-home-heroes.jpg");
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  font-family: UTM Helve;
+  font-size: 1.1575px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.389px;
+  margin: 0px 0px 0.289375px;
+  text-align: left;
+  height: 200px;
+  width: 100%;
+}
+
+.title {
+  background-image: linear-gradient(
+    to top,
+    rgb(189, 152, 103) 0%,
+    rgb(252, 227, 188) 100%
+  );
+  font-size: 30.095px;
+  font-weight: 700;
+  line-height: 42.133px;
+  padding: 0px 0px 18.52px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero Name Styles */
+.p-home__hero--name {
+  color: #edbe80;
+  font-family: UTM Helve;
+  font-size: 26.0438px;
+  font-weight: 700;
+  line-height: 28.6481px;
+  margin: 0px 0px 16.205px;
+  text-align: left;
+}
+
+/* Hero Role P Tag Styles */
+.p-home__hero--role p {
+  color: #fff;
+  font-family: UTM Helve;
+  font-size: 14.4687px;
+  line-height: 17.3625px;
+  margin: 0px 0px 0px 9.26px;
+  text-align: left;
+}
+
+/* Hero List Styles */
+@media (min-width: 750px) {
+  .p-home__heroes--list {
+    bottom: 51rem;
+    right: 213rem;
+  }
+}
+
+.p-home__heroes--list {
+  display: flex;
+  position: absolute;
+}
