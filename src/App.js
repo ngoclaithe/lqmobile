@@ -6,9 +6,9 @@ import GameplaySection from "./GameplaySection";
 // Download Widget Component
 const DownloadWidget = () => {
   return (
-    <div className="fixed top-4 right-4 z-50 hidden lg:block">
+    <div className="fixed top-8 right-4 z-50 hidden lg:block">
       {/* 18+ Warning */}
-      <div className="mb-1">
+      <div className="mb-3" style={{ marginLeft: "27.2012px" }}>
         <img
           src="https://dl.ops.kgvn.garenanow.com/hok/DailyActivity/18%2B.png"
           alt="18+ Warning"
@@ -17,6 +17,7 @@ const DownloadWidget = () => {
             fontSize: "11.575px",
             lineHeight: "17.3625px",
             textAlign: "left",
+            marginTop: "31px",
           }}
           className="w-20 h-auto"
         />
@@ -26,7 +27,7 @@ const DownloadWidget = () => {
       <section
         className="download pc rounded-lg shadow-lg"
         style={{
-          width: "90px",
+          width: "106px",
           backgroundImage:
             'url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-download-1.png")',
           backgroundPosition: "0px 0px",
@@ -251,7 +252,7 @@ const Header = () => {
               </ul>
             </li>
 
-            {/* Cập nhật */}
+            {/* C���p nhật */}
             <li className="menu-item">
               <a
                 href="https://lienquan.garena.vn/cap-nhat/"
