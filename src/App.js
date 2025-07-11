@@ -1054,6 +1054,7 @@ function App() {
       <HeroSlider />
       <PostsSection />
       <HeroesSection />
+      <Footer />
     </div>
   );
 }
