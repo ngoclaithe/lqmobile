@@ -516,6 +516,12 @@
 
 .academy-menu li {
   margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.academy-menu li.active {
+  transform: scale(1.05);
 }
 
 .academy-menu a {
@@ -528,9 +534,6 @@
   transition: transform 0.3s ease;
   padding: 14.7308px 20.0875px;
   border-radius: 8px;
-  font-size: 13.3917px;
-  line-height: 20.0875px;
-  text-align: left;
 }
 
 .academy-menu a:hover {
@@ -538,15 +541,32 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.academy-menu img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.academy-menu span {
+  font-size: 16.7396px;
+  font-family: "UTM Helve", sans-serif;
+  color: #fff;
 }
 
-.academy-menu span {
-  font-size: 14px;
-  font-weight: 500;
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.dot:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.dot.active {
+  background: #fff;
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .p-home__gameplay--content {
@@ -555,10 +575,12 @@
 
 .st-heroes__bar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 2rem;
   margin-bottom: 2rem;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .search {
@@ -600,7 +622,7 @@
 .st-heroes__types {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 1rem;
   list-style: none;
   margin: 0;
@@ -614,21 +636,19 @@
 .st-heroes__types a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 10px 15px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  color: #797979;
+  font-family: UTM Helve;
+  font-size: 12.0525px;
+  line-height: 18.0788px;
+  text-align: left;
   text-decoration: none;
-  color: #fff;
-  font-size: 12px;
+  padding: 10px 15px;
+  gap: 0.5rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
 }
 
 .st-heroes__types a:hover,
 .st-heroes__types a.active {
-  background: rgba(237, 190, 128, 0.2);
-  border-color: #edbe80;
   color: #edbe80;
 }
 
@@ -643,6 +663,7 @@
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.5rem;
   justify-items: center;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .st-heroes__item {
@@ -654,6 +675,12 @@
   transition: all 0.3s ease;
   width: 100%;
   max-width: 120px;
+  color: #0056b3;
+  font-family: UTM Helve;
+  font-size: 13.3917px;
+  line-height: 20.0875px;
+  margin: 6.69583px;
+  text-align: left;
 }
 
 .st-heroes__item:hover {
@@ -680,13 +707,15 @@
 }
 
 .st-heroes__item--name {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 600;
-  margin: 0;
-  padding: 0.5rem;
+  width: 90px;
+  height: 13px;
+  color: #7f7f7f;
+  font-family: UTM Helve;
+  font-size: 10.7133px;
+  font-weight: 500;
+  line-height: 12.856px;
+  margin: 3.34792px 0px 0.334792px;
   text-align: center;
-  line-height: 1.2;
 }
 
 .p-home__gameplay--btn {
