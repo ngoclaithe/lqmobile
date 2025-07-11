@@ -529,11 +529,17 @@
   justify-content: center;
 }
 
-.academy-menu li {
+.academy-menu-list li {
   margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.academy-menu a {
+.academy-menu-list li.active {
+  transform: scale(1.05);
+}
+
+.academy-menu-list a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -548,7 +554,7 @@
   text-align: left;
 }
 
-.academy-menu a:hover {
+.academy-menu-list a:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1);
 }
