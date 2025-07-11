@@ -1,6 +1,62 @@
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".slider-dot");
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("hidden", i !== index);
+        slide.classList.toggle("active", i === index);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("opacity-100", i === index);
+        dot.classList.toggle("bg-yellow-400", i === index);
+        dot.classList.toggle("opacity-50", i !== index);
+        dot.classList.toggle("bg-white", i !== index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    // Auto-slide every 5 seconds
+    const autoSlide = setInterval(nextSlide, 5000);
+
+    // Event listeners
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    if (nextBtn) nextBtn.addEventListener("click", nextSlide);
+    if (prevBtn) prevBtn.addEventListener("click", prevSlide);
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
+
+    // Cleanup
+    return () => {
+      clearInterval(autoSlide);
+      if (nextBtn) nextBtn.removeEventListener("click", nextSlide);
+      if (prevBtn) prevBtn.removeEventListener("click", prevSlide);
+    };
+  }, []);
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Fixed QR Code Download - Top Right Corner - Hide on mobile */}
