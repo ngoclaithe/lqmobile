@@ -480,7 +480,7 @@ const PostsSection = () => {
           {/* Post 2 */}
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
-            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
+            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ S��P SÀN"
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
@@ -608,18 +608,22 @@ const PostsSection = () => {
         <div className="text-center">
           <a
             href="https://lienquan.garena.vn/tin-tuc/"
-            className="p-home__posts--btn btn-more inline-block rounded-lg transition-colors"
+            className="p-home__posts--btn btn-more"
             title="Xem thêm"
             style={{
-              width: "160.89px",
-              height: "35.3px",
-              color: "#EDBE80",
-              fontSize: "12.0091px",
-              fontFamily: '"UTM Helve", sans-serif',
-              margin: "26.0437px 467.562px 0px 467.55px",
-              display: "inline-flex",
+              width: "278px",
+              height: "61px",
+              display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              color: "#edbe80",
+              fontSize: "20.75px",
+              fontWeight: "700",
+              transition: "all 300ms ease",
+              background:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png) 0 0 / 100% 100% no-repeat",
+              fontFamily: '"UTM Helve", sans-serif',
+              textDecoration: "none",
             }}
           >
             Xem thêm
