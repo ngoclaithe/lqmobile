@@ -258,10 +258,13 @@ const GameplaySection = () => {
                 textAlign: "left",
               }}
             >
-              <div className="search">
+              <div
+                className="search"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <input
                   type="text"
-                  placeholder="Tìm kiếm tướng"
+                  placeholder="Tìm ki��m tướng"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -272,7 +275,16 @@ const GameplaySection = () => {
                   />
                 </button>
               </div>
-              <ul className="st-heroes__types">
+              <ul
+                className="st-heroes__types"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  margin: 0,
+                  padding: 0,
+                  listStyle: "none",
+                }}
+              >
                 <li>
                   <a
                     href="#"
