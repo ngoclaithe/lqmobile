@@ -4,24 +4,65 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Fixed QR Code Download - Top Right Corner */}
-      <div className="fixed top-4 right-4 z-50 bg-white p-3 rounded-lg shadow-lg">
-        <div className="text-center">
-          <div className="text-black font-bold text-xs mb-2 bg-red-600 text-white px-2 py-1 rounded">
-            TẢI GAME
+      <div
+        className="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg overflow-hidden"
+        style={{ width: "140px" }}
+      >
+        {/* 18+ Warning */}
+        <div className="bg-white border border-gray-300 p-2 flex items-center">
+          <div className="bg-white border-2 border-black rounded w-8 h-8 flex items-center justify-center mr-2">
+            <span className="text-black font-bold text-xs">18+</span>
           </div>
-          <div className="w-20 h-20 bg-black mb-2 flex items-center justify-center">
-            <div className="w-16 h-16 bg-white border-2 border-black">
-              <div className="w-full h-full bg-gradient-to-br from-black via-gray-700 to-black flex items-center justify-center text-white text-xs font-bold">
-                QR
-              </div>
-            </div>
+          <div className="text-black text-xs leading-tight">
+            Chơi quá 180 phút
+            <br />
+            một ngày sẽ ảnh
+            <br />
+            hưởng sức khỏe
           </div>
-          <div className="flex flex-col space-y-1">
-            <div className="bg-black text-white text-xs px-2 py-1 rounded flex items-center justify-center">
-              <span className="mr-1">▶</span> Google Play
+        </div>
+
+        {/* Download Section */}
+        <div className="bg-red-600 text-center py-2">
+          <div className="text-white font-bold text-sm">TẢI GAME</div>
+        </div>
+
+        {/* QR Code */}
+        <div className="bg-white p-3 flex justify-center">
+          <div className="w-20 h-20 bg-black flex items-center justify-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F81709d0769604a919ab5f926606b1868%2Fd6a98e1250c5459fa5dad611cb05ee2c?format=webp&width=800"
+              alt="QR Code"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* App Store Buttons */}
+        <div className="bg-white pb-3 px-3">
+          <div className="flex flex-col space-y-2">
+            {/* Google Play */}
+            <div className="bg-green-600 text-white text-xs px-2 py-2 rounded flex items-center justify-center">
+              <svg
+                className="w-3 h-3 mr-1"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <span className="font-medium">GET IT ON</span>
             </div>
-            <div className="bg-black text-white text-xs px-2 py-1 rounded flex items-center justify-center">
-              <span className="mr-1">🍎</span> App Store
+            <div className="bg-green-600 text-white text-xs px-2 py-1 rounded text-center">
+              <span className="font-bold">Google Play</span>
+            </div>
+
+            {/* App Store */}
+            <div className="bg-black text-white text-xs px-2 py-2 rounded flex items-center justify-center">
+              <span className="mr-1">🍎</span>
+              <span className="font-medium">Download on the</span>
+            </div>
+            <div className="bg-black text-white text-xs px-2 py-1 rounded text-center">
+              <span className="font-bold">App Store</span>
             </div>
           </div>
         </div>
@@ -136,7 +177,7 @@ function App() {
             <h1 className="text-6xl md:text-8xl font-bold mb-4 leading-tight">
               <span className="text-yellow-400 block">NGÀY HỘI</span>
               <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent block">
-                LI��N QUÂN 09.07
+                LIÊN QUÂN 09.07
               </span>
             </h1>
             <div className="text-3xl text-yellow-300 italic font-bold">
