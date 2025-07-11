@@ -629,8 +629,6 @@
 
 .st-heroes__types a:hover,
 .st-heroes__types a.active {
-  background: rgba(237, 190, 128, 0.2);
-  border-color: #edbe80;
   color: #edbe80;
 }
 
