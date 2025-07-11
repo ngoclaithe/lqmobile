@@ -719,6 +719,36 @@ const PostsSection = () => {
 
 // Heroes Section Component
 const HeroesSection = () => {
+  const [activeHero, setActiveHero] = useState(2);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const heroNumber = parseInt(hash.replace("#hero-", ""));
+        if (heroNumber >= 1 && heroNumber <= 5) {
+          setActiveHero(heroNumber);
+        }
+      }
+    };
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Check initial hash
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const handleHeroClick = (heroNumber, e) => {
+    e.preventDefault();
+    setActiveHero(heroNumber);
+    window.location.hash = `hero-${heroNumber}`;
+  };
+
   return (
     <section className="p-home__heroes">
       <div className="p-home__heroes--title">
