@@ -429,7 +429,7 @@ const HeroSlider = () => {
 const PostsSection = () => {
   return (
     <section className="p-home__posts bg-slate-900 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" style={{ maxWidth: "1180px" }}>
         <h2 className="p-home__posts--title title mo text-3xl md:text-4xl font-bold text-white text-center mb-12">
           Tin tức nổi bật
         </h2>
@@ -439,7 +439,8 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-ngay-hoi-lien-quan-9-7-2025/"
             title="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
             <picture className="block">
               <img
@@ -460,7 +461,8 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
             title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
             <picture className="block">
               <img
@@ -482,7 +484,8 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/so-su-menh-79/"
             title="SỔ SỨ MỆNH 79"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
             <picture className="block">
               <img
@@ -503,7 +506,8 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/quy-trinh-cap-nhat-phien-ban-ngay-hoi-lien-quan-9-7-2025/"
             title="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
             <picture className="block">
               <img
