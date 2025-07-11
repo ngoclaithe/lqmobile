@@ -1,5 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
+import GameplaySection from "./GameplaySection";
 
 // Download Widget Component
 const DownloadWidget = () => {
@@ -1053,6 +1055,8 @@ function App() {
       <HeroSlider />
       <PostsSection />
       <HeroesSection />
+      <GameplaySection />
+      <Footer />
     </div>
   );
 }
