@@ -535,7 +535,7 @@
 }
 
 .academy-menu li.active {
-  transform: scale(1.05);
+  /* Bỏ transform scale để tránh lùi ra */
 }
 
 /* Background gradient cho Tướng/Skin khi active */
