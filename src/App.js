@@ -631,7 +631,7 @@ function App() {
       <DownloadWidget />
       <Header />
       <HeroSlider />
-      <NewsCards />
+      <PostsSection />
       <ChampionSection />
     </div>
   );
