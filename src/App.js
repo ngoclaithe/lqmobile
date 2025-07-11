@@ -155,7 +155,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/hoc-vien/che-do-choi/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    Chế đ��� chơi
+                    Chế độ chơi
                   </a>
                 </li>
               </ul>
@@ -251,7 +251,7 @@ const Header = () => {
               </a>
             </li>
 
-            {/* Liên kết với dropdown */}
+            {/* Li��n kết với dropdown */}
             <li className="menu-item menu-item-has-children relative group">
               <a
                 href="#"
@@ -450,8 +450,28 @@ const PostsSection = () => {
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                08.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025
               </h3>
             </div>
@@ -472,8 +492,28 @@ const PostsSection = () => {
               />
             </picture>
             <div className="p-4" style={{ color: "#0f172a" }}>
-              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                08.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP
                 SÀN
               </h3>
@@ -495,8 +535,28 @@ const PostsSection = () => {
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">27.06.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                27.06.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 SỔ SỨ MỆNH 79
               </h3>
             </div>
@@ -517,8 +577,28 @@ const PostsSection = () => {
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">07.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                07.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025
               </h3>
             </div>
