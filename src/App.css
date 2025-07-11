@@ -514,17 +514,17 @@
   min-width: 200px;
 }
 
-.academy-menu-list li {
+.academy-menu li {
   margin: 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.academy-menu-list li.active {
+.academy-menu li.active {
   transform: scale(1.05);
 }
 
-.academy-menu-list a {
+.academy-menu a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -534,14 +534,17 @@
   transition: transform 0.3s ease;
   padding: 14.7308px 20.0875px;
   border-radius: 8px;
-  font-size: 13.3917px;
-  line-height: 20.0875px;
-  text-align: left;
 }
 
-.academy-menu-list a:hover {
+.academy-menu a:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1);
+}
+
+.academy-menu span {
+  font-size: 16.7396px;
+  font-family: "UTM Helve", sans-serif;
+  color: #fff;
 }
 
 .dot {
