@@ -16,8 +16,18 @@ const DownloadWidget = () => {
 
       {/* Download Section */}
       <section
-        className="download pc bg-red-600 rounded-lg p-2 shadow-lg"
-        style={{ width: "90px" }}
+        className="download pc rounded-lg shadow-lg"
+        style={{
+          width: "90px",
+          backgroundImage:
+            'url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-download-1.png")',
+          backgroundPosition: "0px 0px",
+          backgroundSize: "100% 100%",
+          fontSize: "11.575px",
+          lineHeight: "17.3625px",
+          padding: "56.7175px 1.1575px 12.7325px 27.2012px",
+          textAlign: "center",
+        }}
       >
         <div className="text-center mb-2">
           <div className="text-white font-bold text-xs">TẢI GAME</div>
@@ -211,7 +221,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/tin-tuc/hop-tac/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    Hợp tác
+                    H��p tác
                   </a>
                 </li>
                 <li>
