@@ -209,23 +209,27 @@
 
 /* Hero More Button */
 .p-home__hero--more {
-  display: inline-block;
-  background: linear-gradient(45deg, #edbe80, #bd9867);
-  color: #1a1a2e;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
+  width: 278px;
+  height: 61px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(237, 190, 128);
+  font-size: 21px;
   font-weight: 700;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  text-align: center;
-  max-width: 120px;
+  line-height: 31px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "UTM Helve", sans-serif;
+  text-decoration: none;
   animation: slideInLeft 1s ease-out;
 }
 
 .p-home__hero--more:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(237, 190, 128, 0.4);
 }
 
 /* Hero List Navigation */
