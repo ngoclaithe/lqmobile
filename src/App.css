@@ -506,27 +506,12 @@
 .academy-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem 0;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-}
-
-.academy-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.academy-menu-dots {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
+  flex-shrink: 0;
+  min-width: 200px;
 }
 
 .academy-menu-list li {
