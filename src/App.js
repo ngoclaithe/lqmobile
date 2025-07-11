@@ -17,6 +17,7 @@ const DownloadWidget = () => {
             fontSize: "11.575px",
             lineHeight: "17.3625px",
             textAlign: "left",
+            marginTop: "31px",
           }}
           className="w-20 h-auto"
         />
@@ -26,7 +27,7 @@ const DownloadWidget = () => {
       <section
         className="download pc rounded-lg shadow-lg"
         style={{
-          width: "90px",
+          width: "106px",
           backgroundImage:
             'url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-download-1.png")',
           backgroundPosition: "0px 0px",
@@ -251,7 +252,7 @@ const Header = () => {
               </ul>
             </li>
 
-            {/* Cập nhật */}
+            {/* C���p nhật */}
             <li className="menu-item">
               <a
                 href="https://lienquan.garena.vn/cap-nhat/"
