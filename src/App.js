@@ -74,6 +74,13 @@ const Header = () => {
           <img
             src="https://lienquan.garena.vn/wp-content/uploads/2024/02/logo.png"
             alt="Liên Quân Logo"
+            style={{
+              color: "#0056b3",
+              display: "inline",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              textAlign: "left",
+            }}
             className="h-8 w-auto"
           />
         </div>
@@ -308,25 +315,24 @@ const Header = () => {
 
         {/* Search */}
         <div className="flex items-center space-x-4">
-          <div className="hidden md:flex items-center bg-white/10 rounded px-3 py-2">
+          <div className="hidden md:flex items-center relative">
             <input
               type="text"
               placeholder="Nhập từ khóa tìm kiếm"
-              className="bg-transparent text-white placeholder-gray-300 text-sm outline-none w-48"
+              style={{
+                backgroundImage:
+                  'url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-input.png")',
+                backgroundPosition: "0px 0px",
+                backgroundSize: "100% 100%",
+                color: "#fff",
+                display: "inline-block",
+                fontFamily: "UTM Helve",
+                fontSize: "10.4175px",
+                lineHeight: "15.6262px",
+                padding: "0px 52.0875px 0px 18.52px",
+              }}
+              className="outline-none w-48 border-none bg-transparent"
             />
-            <svg
-              className="w-4 h-4 text-gray-300 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
           </div>
         </div>
       </div>
