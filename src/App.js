@@ -409,16 +409,66 @@ const HeroSlider = () => {
         </div>
 
         {/* Owl Dots Navigation */}
-        <div className="owl-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-          <button role="button" className="owl-dot active">
-            <span className="block w-3 h-3 bg-yellow-400 rounded-full"></span>
-          </button>
-          <button role="button" className="owl-dot">
-            <span className="block w-3 h-3 bg-white/50 rounded-full"></span>
-          </button>
-          <button role="button" className="owl-dot">
-            <span className="block w-3 h-3 bg-white/50 rounded-full"></span>
-          </button>
+        <div className="owl-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex z-10">
+          <button
+            role="button"
+            className="owl-dot active"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot-active.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+            }}
+          ></button>
+          <button
+            role="button"
+            className="owl-dot"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+              opacity: "0.5",
+            }}
+          ></button>
+          <button
+            role="button"
+            className="owl-dot"
+            style={{
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/icon-dot.png)",
+              backgroundPosition: "0px 0px",
+              backgroundSize: "100% 100%",
+              fontFamily: "UTM Helve",
+              fontSize: "11.575px",
+              lineHeight: "17.3625px",
+              margin: "0px 0px 0px 17.3625px",
+              textAlign: "center",
+              width: "12px",
+              height: "12px",
+              border: "none",
+              cursor: "pointer",
+              opacity: "0.5",
+            }}
+          ></button>
         </div>
       </div>
     </section>
@@ -429,7 +479,7 @@ const HeroSlider = () => {
 const PostsSection = () => {
   return (
     <section className="p-home__posts bg-slate-900 py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" style={{ maxWidth: "1180px" }}>
         <h2 className="p-home__posts--title title mo text-3xl md:text-4xl font-bold text-white text-center mb-12">
           Tin tức nổi bật
         </h2>
@@ -439,18 +489,39 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-ngay-hoi-lien-quan-9-7-2025/"
             title="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032810-cover-post-428x199.jpg"
-                alt="CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
-                className="w-full h-48 object-cover"
+                alt="CHI TIẾT BẢN C���P NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                08.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 CHI TIẾT BẢN CẬP NHẬT NGÀY HỘI LIÊN QUÂN 9.7.2025
               </h3>
             </div>
@@ -460,18 +531,39 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
             title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/SeaTalk_IMG_20250708_115413-1-428x199.jpg"
                 alt="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
-            <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+            <div className="p-4" style={{ color: "#0f172a" }}>
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                08.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP
                 SÀN
               </h3>
@@ -482,18 +574,39 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/so-su-menh-79/"
             title="SỔ SỨ MỆNH 79"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/06/IMG-HOR-0860x0400-030636-cover-post-428x199.jpg"
                 alt="SỔ SỨ MỆNH 79"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">27.06.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                27.06.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 SỔ SỨ MỆNH 79
               </h3>
             </div>
@@ -503,18 +616,39 @@ const PostsSection = () => {
           <a
             href="https://lienquan.garena.vn/quy-trinh-cap-nhat-phien-ban-ngay-hoi-lien-quan-9-7-2025/"
             title="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
-            className="p-home__posts--item bg-slate-800 rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
+            style={{ backgroundColor: "#0f172a" }}
           >
-            <picture className="block">
+            <picture className="block overflow-hidden">
               <img
                 src="https://lienquan.garena.vn/wp-content/uploads/2025/07/IMG-HOR-0860x0400-032815-cv-post-428x199.jpg"
                 alt="QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:rotate-3"
               />
             </picture>
             <div className="p-4">
-              <p className="text-gray-400 text-sm mb-2">07.07.2025</p>
-              <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+              <p
+                className="mb-2"
+                style={{
+                  width: "247.7px",
+                  height: "15.61px",
+                  color: "#B99562",
+                  fontSize: "10.4175px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
+                07.07.2025
+              </p>
+              <h3
+                className="font-bold leading-tight transition-all duration-300 group-hover:underline"
+                style={{
+                  width: "247.7px",
+                  height: "33.33px",
+                  color: "#FFFFFF",
+                  fontSize: "13.89px",
+                  fontFamily: '"UTM Helve", sans-serif',
+                }}
+              >
                 QUY TRÌNH CẬP NHẬT PHIÊN BẢN NGÀY HỘI LIÊN QUÂN – 9.7.2025
               </h3>
             </div>
@@ -524,11 +658,37 @@ const PostsSection = () => {
         <div className="text-center">
           <a
             href="https://lienquan.garena.vn/tin-tuc/"
-            className="p-home__posts--btn btn-more inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 rounded-lg transition-colors"
+            className="p-home__posts--btn btn-more"
             title="Xem thêm"
+            style={{
+              width: "278px",
+              height: "61px",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "rgb(237, 190, 128)",
+              fontSize: "21px",
+              fontWeight: "700",
+              lineHeight: "31px",
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              backgroundImage:
+                "url(https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-more.png)",
+              backgroundPosition: "0px 0px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "100% 100%",
+              fontFamily: '"UTM Helve", sans-serif',
+              textDecoration: "none",
+            }}
           >
             Xem thêm
           </a>
+          <div
+            style={{
+              fontWeight: "400",
+              textAlign: "center",
+              pointerEvents: "auto",
+            }}
+          />
         </div>
       </div>
     </section>
