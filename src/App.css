@@ -560,8 +560,11 @@
 }
 
 .academy-menu a:hover {
-  transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1);
+}
+
+.academy-menu a:hover span {
+  color: #edbe80;
 }
 
 .academy-menu span {
