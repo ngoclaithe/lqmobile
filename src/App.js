@@ -6,11 +6,11 @@ function App() {
       {/* Fixed QR Code Download - Top Right Corner */}
       <div
         className="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg overflow-hidden"
-        style={{ width: "140px" }}
+        style={{ width: "120px" }}
       >
         {/* 18+ Warning */}
-        <div className="bg-white border border-gray-300 p-2 flex items-center">
-          <div className="bg-white border-2 border-black rounded w-8 h-8 flex items-center justify-center mr-2">
+        <div className="bg-white border-2 border-gray-400 p-2 flex items-start">
+          <div className="bg-white border-2 border-black rounded-sm w-7 h-7 flex items-center justify-center mr-2 flex-shrink-0">
             <span className="text-black font-bold text-xs">18+</span>
           </div>
           <div className="text-black text-xs leading-tight">
@@ -22,47 +22,47 @@ function App() {
           </div>
         </div>
 
-        {/* Download Section */}
+        {/* Download Header */}
         <div className="bg-red-600 text-center py-2">
           <div className="text-white font-bold text-sm">TẢI GAME</div>
         </div>
 
         {/* QR Code */}
         <div className="bg-white p-3 flex justify-center">
-          <div className="w-20 h-20 bg-black flex items-center justify-center">
+          <div className="w-20 h-20 bg-black">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F81709d0769604a919ab5f926606b1868%2Fd6a98e1250c5459fa5dad611cb05ee2c?format=webp&width=800"
               alt="QR Code"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
 
         {/* App Store Buttons */}
-        <div className="bg-white pb-3 px-3">
-          <div className="flex flex-col space-y-2">
-            {/* Google Play */}
-            <div className="bg-green-600 text-white text-xs px-2 py-2 rounded flex items-center justify-center">
-              <svg
-                className="w-3 h-3 mr-1"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              <span className="font-medium">GET IT ON</span>
-            </div>
-            <div className="bg-green-600 text-white text-xs px-2 py-1 rounded text-center">
-              <span className="font-bold">Google Play</span>
+        <div className="bg-white px-2 pb-2">
+          <div className="flex flex-col space-y-1">
+            {/* Google Play Button */}
+            <div className="bg-green-600 text-white rounded px-2 py-1">
+              <div className="flex items-center justify-start text-xs">
+                <svg
+                  className="w-3 h-3 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                <span className="font-normal">GET IT ON</span>
+              </div>
+              <div className="text-xs font-bold text-center">Google Play</div>
             </div>
 
-            {/* App Store */}
-            <div className="bg-black text-white text-xs px-2 py-2 rounded flex items-center justify-center">
-              <span className="mr-1">🍎</span>
-              <span className="font-medium">Download on the</span>
-            </div>
-            <div className="bg-black text-white text-xs px-2 py-1 rounded text-center">
-              <span className="font-bold">App Store</span>
+            {/* App Store Button */}
+            <div className="bg-black text-white rounded px-2 py-1">
+              <div className="flex items-center justify-start text-xs">
+                <span className="mr-1 text-sm">🍎</span>
+                <span className="font-normal">Download on the</span>
+              </div>
+              <div className="text-xs font-bold text-center">App Store</div>
             </div>
           </div>
         </div>
