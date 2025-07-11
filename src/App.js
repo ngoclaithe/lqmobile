@@ -760,221 +760,231 @@ const HeroesSection = () => {
             className={`p-home__hero ${activeHero === 1 ? "active" : ""}`}
             id="hero-1"
           >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Krixi
+                  <br />
+                  Tinh Linh Thiên Nhiên
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/phap-su-2.png"
+                    alt="Pháp sư"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Pháp sư, Cấu rỉa
+                  </p>
+                </div>
+                <a
+                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/"
+                  className="p-home__hero--more btn-more"
+                  title="Xem thêm"
+                >
+                  Xem thêm
+                </a>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title="Krixi Video"
+                ></iframe>
+              </div>
+            </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Krixi-featured.jpg"
               className="p-home__hero--img"
               alt="Krixi"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Krixi
-                <br />
-                Tinh Linh Thiên Nhiên
-              </h3>
-              <div className="p-home__hero--role">
-                <img
-                  src="https://lienquan.garena.vn/wp-content/uploads/2024/06/phap-su-2.png"
-                  alt="Pháp sư"
-                />
-                <p>
-                  Vị trí:
-                  <br />
-                  Pháp sư, Cấu rỉa
-                </p>
-              </div>
-              <a
-                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/"
-                className="p-home__hero--more btn-more"
-                title="Xem thêm"
-              >
-                Xem thêm
-              </a>
-            </div>
-            <div className="p-home__hero--video">
-              <iframe
-                src="https://www.youtube.com/embed/yA1U8ftafwA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                title="Krixi Video"
-              ></iframe>
-            </div>
           </li>
           <li
             className={`p-home__hero ${activeHero === 2 ? "active" : ""}`}
             id="hero-2"
           >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Valhein
+                  <br />
+                  Thợ Săn Ác Quỷ
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/xa-thu-2.png"
+                    alt="Xạ thủ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Xạ thủ
+                  </p>
+                </div>
+                <a
+                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/"
+                  className="p-home__hero--more btn-more"
+                  title="Xem thêm"
+                >
+                  Xem thêm
+                </a>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title="Valhein Video"
+                ></iframe>
+              </div>
+            </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Val.jpg"
               className="p-home__hero--img"
               alt="Valhein"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Valhein
-                <br />
-                Thợ Săn Ác Quỷ
-              </h3>
-              <div className="p-home__hero--role">
-                <img
-                  src="https://lienquan.garena.vn/wp-content/uploads/2024/06/xa-thu-2.png"
-                  alt="Xạ thủ"
-                />
-                <p>
-                  Vị trí:
-                  <br />
-                  Xạ thủ
-                </p>
-              </div>
-              <a
-                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/"
-                className="p-home__hero--more btn-more"
-                title="Xem thêm"
-              >
-                Xem thêm
-              </a>
-            </div>
-            <div className="p-home__hero--video">
-              <iframe
-                src="https://www.youtube.com/embed/yA1U8ftafwA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                title="Valhein Video"
-              ></iframe>
-            </div>
           </li>
           <li
             className={`p-home__hero ${activeHero === 3 ? "active" : ""}`}
             id="hero-3"
           >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Aya
+                  <br />
+                  Ca Sĩ Tinh Linh
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/ho-tro-2.png"
+                    alt="Trợ thủ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Trợ thủ
+                  </p>
+                </div>
+                <a
+                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/"
+                  className="p-home__hero--more btn-more"
+                  title="Xem thêm"
+                >
+                  Xem thêm
+                </a>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title="Aya Video"
+                ></iframe>
+              </div>
+            </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Aya.jpg"
               className="p-home__hero--img"
               alt="Aya"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Aya
-                <br />
-                Ca Sĩ Tinh Linh
-              </h3>
-              <div className="p-home__hero--role">
-                <img
-                  src="https://lienquan.garena.vn/wp-content/uploads/2024/06/ho-tro-2.png"
-                  alt="Trợ thủ"
-                />
-                <p>
-                  Vị trí:
-                  <br />
-                  Trợ thủ
-                </p>
-              </div>
-              <a
-                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/"
-                className="p-home__hero--more btn-more"
-                title="Xem thêm"
-              >
-                Xem thêm
-              </a>
-            </div>
-            <div className="p-home__hero--video">
-              <iframe
-                src="https://www.youtube.com/embed/yA1U8ftafwA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                title="Aya Video"
-              ></iframe>
-            </div>
           </li>
           <li
             className={`p-home__hero ${activeHero === 4 ? "active" : ""}`}
             id="hero-4"
           >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Triêu Vân
+                  <br />
+                  Kỵ Sĩ Rồng
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
+                    alt="Đấu sĩ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Đấu sĩ
+                  </p>
+                </div>
+                <a
+                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/trieu-van/"
+                  className="p-home__hero--more btn-more"
+                  title="Xem thêm"
+                >
+                  Xem thêm
+                </a>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title="Triêu Vân Video"
+                ></iframe>
+              </div>
+            </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/trieu-van.jpg"
               className="p-home__hero--img"
               alt="Triêu Vân"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Triêu Vân
-                <br />
-                Kỵ Sĩ Rồng
-              </h3>
-              <div className="p-home__hero--role">
-                <img
-                  src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
-                  alt="Đấu sĩ"
-                />
-                <p>
-                  Vị trí:
-                  <br />
-                  Đấu sĩ
-                </p>
-              </div>
-              <a
-                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/trieu-van/"
-                className="p-home__hero--more btn-more"
-                title="Xem thêm"
-              >
-                Xem thêm
-              </a>
-            </div>
-            <div className="p-home__hero--video">
-              <iframe
-                src="https://www.youtube.com/embed/yA1U8ftafwA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                title="Triêu Vân Video"
-              ></iframe>
-            </div>
           </li>
           <li
             className={`p-home__hero ${activeHero === 5 ? "active" : ""}`}
             id="hero-5"
           >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Arthur
+                  <br />
+                  Thanh Gươm Chính Nghĩa
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
+                    alt="Đấu sĩ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Đấu sĩ
+                  </p>
+                </div>
+                <a
+                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/"
+                  className="p-home__hero--more btn-more"
+                  title="Xem thêm"
+                >
+                  Xem thêm
+                </a>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  title="Arthur Video"
+                ></iframe>
+              </div>
+            </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/arthur-featured.jpg"
               className="p-home__hero--img"
               alt="Arthur"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Arthur
-                <br />
-                Thanh Gươm Chính Nghĩa
-              </h3>
-              <div className="p-home__hero--role">
-                <img
-                  src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
-                  alt="Đấu sĩ"
-                />
-                <p>
-                  Vị trí:
-                  <br />
-                  Đấu sĩ
-                </p>
-              </div>
-              <a
-                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/"
-                className="p-home__hero--more btn-more"
-                title="Xem thêm"
-              >
-                Xem thêm
-              </a>
-            </div>
-            <div className="p-home__hero--video">
-              <iframe
-                src="https://www.youtube.com/embed/yA1U8ftafwA"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                title="Arthur Video"
-              ></iframe>
-            </div>
           </li>
         </ul>
         <div className="p-home__heroes--list">
