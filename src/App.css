@@ -559,15 +559,26 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.academy-menu img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.5;
 }
 
-.academy-menu span {
-  font-size: 14px;
-  font-weight: 500;
+.dot:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.dot.active {
+  background: #fff;
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .p-home__gameplay--content {
