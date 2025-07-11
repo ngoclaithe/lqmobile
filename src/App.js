@@ -552,7 +552,7 @@ const PostsSection = () => {
           {/* Post 2 */}
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
-            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
+            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH ��� QUÀ SẬP SÀN"
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
@@ -778,13 +778,6 @@ const HeroesSection = () => {
                     Pháp sư, Cấu rỉa
                   </p>
                 </div>
-                <a
-                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/"
-                  className="p-home__hero--more btn-more"
-                  title="Xem thêm"
-                >
-                  Xem thêm
-                </a>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -795,6 +788,13 @@ const HeroesSection = () => {
                   title="Krixi Video"
                 ></iframe>
               </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
             </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Krixi-featured.jpg"
@@ -824,13 +824,6 @@ const HeroesSection = () => {
                     Xạ thủ
                   </p>
                 </div>
-                <a
-                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/"
-                  className="p-home__hero--more btn-more"
-                  title="Xem thêm"
-                >
-                  Xem thêm
-                </a>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -841,6 +834,13 @@ const HeroesSection = () => {
                   title="Valhein Video"
                 ></iframe>
               </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
             </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Val.jpg"
@@ -870,13 +870,6 @@ const HeroesSection = () => {
                     Trợ thủ
                   </p>
                 </div>
-                <a
-                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/"
-                  className="p-home__hero--more btn-more"
-                  title="Xem thêm"
-                >
-                  Xem thêm
-                </a>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -887,6 +880,13 @@ const HeroesSection = () => {
                   title="Aya Video"
                 ></iframe>
               </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
             </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Aya.jpg"
@@ -916,13 +916,6 @@ const HeroesSection = () => {
                     Đấu sĩ
                   </p>
                 </div>
-                <a
-                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/trieu-van/"
-                  className="p-home__hero--more btn-more"
-                  title="Xem thêm"
-                >
-                  Xem thêm
-                </a>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -933,6 +926,13 @@ const HeroesSection = () => {
                   title="Triêu Vân Video"
                 ></iframe>
               </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/trieu-van/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
             </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/trieu-van.jpg"
@@ -962,13 +962,6 @@ const HeroesSection = () => {
                     Đấu sĩ
                   </p>
                 </div>
-                <a
-                  href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/"
-                  className="p-home__hero--more btn-more"
-                  title="Xem thêm"
-                >
-                  Xem thêm
-                </a>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -979,6 +972,13 @@ const HeroesSection = () => {
                   title="Arthur Video"
                 ></iframe>
               </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
             </div>
             <img
               src="https://lienquan.garena.vn/wp-content/uploads/2024/06/arthur-featured.jpg"
