@@ -8,7 +8,7 @@ const DownloadWidget = () => {
   return (
     <div className="fixed top-4 right-4 z-50 hidden lg:block">
       {/* 18+ Warning */}
-      <div className="mb-1">
+      <div className="mb-3" style={{ marginLeft: "27.2012px" }}>
         <img
           src="https://dl.ops.kgvn.garenanow.com/hok/DailyActivity/18%2B.png"
           alt="18+ Warning"
