@@ -4,68 +4,59 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Fixed QR Code Download - Top Right Corner */}
-      <div
-        className="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg overflow-hidden"
-        style={{ width: "120px" }}
-      >
+      <div className="fixed top-4 right-4 z-50">
         {/* 18+ Warning */}
-        <div className="bg-white border-2 border-gray-400 p-2 flex items-start">
-          <div className="bg-white border-2 border-black rounded-sm w-7 h-7 flex items-center justify-center mr-2 flex-shrink-0">
-            <span className="text-black font-bold text-xs">18+</span>
-          </div>
-          <div className="text-black text-xs leading-tight">
-            Chơi quá 180 phút
-            <br />
-            một ngày sẽ ảnh
-            <br />
-            hưởng sức khỏe
-          </div>
+        <div className="mb-2">
+          <img
+            src="https://dl.ops.kgvn.garenanow.com/hok/DailyActivity/18%2B.png"
+            alt="18+ Warning"
+            className="w-auto h-auto"
+          />
         </div>
 
-        {/* Download Header */}
-        <div className="bg-red-600 text-center py-2">
-          <div className="text-white font-bold text-sm">TẢI GAME</div>
-        </div>
+        {/* Download Section */}
+        <section className="download pc bg-red-600 rounded-lg p-3 shadow-lg">
+          <div className="text-center mb-3">
+            <div className="text-white font-bold text-sm">TẢI GAME</div>
+          </div>
 
-        {/* QR Code */}
-        <div className="bg-white p-3 flex justify-center">
-          <div className="w-20 h-20 bg-black">
+          {/* QR Code */}
+          <div className="download__qr mb-3 flex justify-center">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F81709d0769604a919ab5f926606b1868%2Fd6a98e1250c5459fa5dad611cb05ee2c?format=webp&width=800"
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/07/QRCode.png"
               alt="QR Code"
-              className="w-full h-full object-contain"
+              className="w-20 h-20"
             />
           </div>
-        </div>
 
-        {/* App Store Buttons */}
-        <div className="bg-white px-2 pb-2">
-          <div className="flex flex-col space-y-1">
-            {/* Google Play Button */}
-            <div className="bg-green-600 text-white rounded px-2 py-1">
-              <div className="flex items-center justify-start text-xs">
-                <svg
-                  className="w-3 h-3 mr-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span className="font-normal">GET IT ON</span>
-              </div>
-              <div className="text-xs font-bold text-center">Google Play</div>
-            </div>
+          {/* Google Play Button */}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.garena.game.kgvn&hl=vi"
+            className="download__google block mb-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-google-play.png"
+              alt="Google Play"
+              className="w-full h-auto"
+            />
+          </a>
 
-            {/* App Store Button */}
-            <div className="bg-black text-white rounded px-2 py-1">
-              <div className="flex items-center justify-start text-xs">
-                <span className="mr-1 text-sm">🍎</span>
-                <span className="font-normal">Download on the</span>
-              </div>
-              <div className="text-xs font-bold text-center">App Store</div>
-            </div>
-          </div>
-        </div>
+          {/* App Store Button */}
+          <a
+            href="https://apps.apple.com/vn/app/garena-li%C3%AAn-qu%C3%A2n-mobile/id1150288115"
+            className="download__apple block"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/btn-app-store.png"
+              alt="App Store"
+              className="w-full h-auto"
+            />
+          </a>
+        </section>
       </div>
 
       {/* Header */}
