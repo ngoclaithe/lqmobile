@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Download Widget Component
 const DownloadWidget = () => {
@@ -552,7 +552,7 @@ const PostsSection = () => {
           {/* Post 2 */}
           <a
             href="https://lienquan.garena.vn/tong-hop-su-kien-ngay-hoi-lien-quan/"
-            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP SÀN"
+            title="TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH ��� QUÀ SẬP SÀN"
             className="p-home__posts--item rounded-lg overflow-hidden hover:scale-105 transition-transform group"
             style={{ backgroundColor: "#0f172a" }}
           >
@@ -719,6 +719,36 @@ const PostsSection = () => {
 
 // Heroes Section Component
 const HeroesSection = () => {
+  const [activeHero, setActiveHero] = useState(2);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const heroNumber = parseInt(hash.replace("#hero-", ""));
+        if (heroNumber >= 1 && heroNumber <= 5) {
+          setActiveHero(heroNumber);
+        }
+      }
+    };
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Check initial hash
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const handleHeroClick = (heroNumber, e) => {
+    e.preventDefault();
+    setActiveHero(heroNumber);
+    window.location.hash = `hero-${heroNumber}`;
+  };
+
   return (
     <section className="p-home__heroes">
       <div className="p-home__heroes--title">
@@ -726,24 +756,28 @@ const HeroesSection = () => {
       </div>
       <div className="p-home__heroes--main">
         <ul className="p-home__heroes--content">
-          <li className="p-home__hero" id="hero-1">
-            <img
-              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Krixi-featured.jpg"
-              className="p-home__hero--img"
-            />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Krixi
-                <br />
-                Tinh Linh Thiên Nhiên
-              </h3>
-              <div className="p-home__hero--role">
-                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/phap-su-2.png" />
-                <p>
-                  Vị trí:
+          <li
+            className={`p-home__hero ${activeHero === 1 ? "active" : ""}`}
+            id="hero-1"
+          >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Krixi
                   <br />
-                  Pháp sư, Cấu rỉa
-                </p>
+                  Tinh Linh Thiên Nhiên
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/phap-su-2.png"
+                    alt="Pháp sư"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Pháp sư, Cấu rỉa
+                  </p>
+                </div>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -751,6 +785,7 @@ const HeroesSection = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Krixi Video"
                 ></iframe>
               </div>
               <a
@@ -761,25 +796,34 @@ const HeroesSection = () => {
                 Xem thêm
               </a>
             </div>
-          </li>
-          <li className="p-home__hero active" id="hero-2">
             <img
-              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Val.jpg"
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Krixi-featured.jpg"
               className="p-home__hero--img"
+              alt="Krixi"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Valhein
-                <br />
-                Thợ Săn Ác Quỷ
-              </h3>
-              <div className="p-home__hero--role">
-                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/xa-thu-2.png" />
-                <p>
-                  Vị trí:
+          </li>
+          <li
+            className={`p-home__hero ${activeHero === 2 ? "active" : ""}`}
+            id="hero-2"
+          >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Valhein
                   <br />
-                  Xạ thủ
-                </p>
+                  Thợ Săn Ác Quỷ
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/xa-thu-2.png"
+                    alt="Xạ thủ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Xạ thủ
+                  </p>
+                </div>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -787,6 +831,7 @@ const HeroesSection = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Valhein Video"
                 ></iframe>
               </div>
               <a
@@ -797,25 +842,34 @@ const HeroesSection = () => {
                 Xem thêm
               </a>
             </div>
-          </li>
-          <li className="p-home__hero" id="hero-3">
             <img
-              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Aya.jpg"
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Val.jpg"
               className="p-home__hero--img"
+              alt="Valhein"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Aya
-                <br />
-                Ca Sĩ Tinh Linh
-              </h3>
-              <div className="p-home__hero--role">
-                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/ho-tro-2.png" />
-                <p>
-                  Vị trí:
+          </li>
+          <li
+            className={`p-home__hero ${activeHero === 3 ? "active" : ""}`}
+            id="hero-3"
+          >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Aya
                   <br />
-                  Trợ thủ
-                </p>
+                  Ca Sĩ Tinh Linh
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/ho-tro-2.png"
+                    alt="Trợ thủ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Trợ thủ
+                  </p>
+                </div>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -823,6 +877,7 @@ const HeroesSection = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Aya Video"
                 ></iframe>
               </div>
               <a
@@ -833,25 +888,34 @@ const HeroesSection = () => {
                 Xem thêm
               </a>
             </div>
-          </li>
-          <li className="p-home__hero" id="hero-4">
             <img
-              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/trieu-van.jpg"
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Aya.jpg"
               className="p-home__hero--img"
+              alt="Aya"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Triêu Vân
-                <br />
-                Kỵ Sĩ Rồng
-              </h3>
-              <div className="p-home__hero--role">
-                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png" />
-                <p>
-                  Vị trí:
+          </li>
+          <li
+            className={`p-home__hero ${activeHero === 4 ? "active" : ""}`}
+            id="hero-4"
+          >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Triêu Vân
                   <br />
-                  Đấu sĩ
-                </p>
+                  Kỵ Sĩ Rồng
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
+                    alt="Đấu sĩ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Đấu sĩ
+                  </p>
+                </div>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -859,6 +923,7 @@ const HeroesSection = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Triêu Vân Video"
                 ></iframe>
               </div>
               <a
@@ -869,25 +934,34 @@ const HeroesSection = () => {
                 Xem thêm
               </a>
             </div>
-          </li>
-          <li className="p-home__hero" id="hero-5">
             <img
-              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/arthur-featured.jpg"
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/trieu-van.jpg"
               className="p-home__hero--img"
+              alt="Triêu Vân"
             />
-            <div className="p-home__hero--content">
-              <h3 className="p-home__hero--name">
-                Arthur
-                <br />
-                Thanh Gươm Chính Nghĩa
-              </h3>
-              <div className="p-home__hero--role">
-                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png" />
-                <p>
-                  Vị trí:
+          </li>
+          <li
+            className={`p-home__hero ${activeHero === 5 ? "active" : ""}`}
+            id="hero-5"
+          >
+            <div className="p-home__hero--left">
+              <div className="p-home__hero--content">
+                <h3 className="p-home__hero--name">
+                  Arthur
                   <br />
-                  Đấu sĩ
-                </p>
+                  Thanh Gươm Chính Nghĩa
+                </h3>
+                <div className="p-home__hero--role">
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png"
+                    alt="Đấu sĩ"
+                  />
+                  <p>
+                    Vị trí:
+                    <br />
+                    Đấu sĩ
+                  </p>
+                </div>
               </div>
               <div className="p-home__hero--video">
                 <iframe
@@ -895,6 +969,7 @@ const HeroesSection = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  title="Arthur Video"
                 ></iframe>
               </div>
               <a
@@ -905,23 +980,63 @@ const HeroesSection = () => {
                 Xem thêm
               </a>
             </div>
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/arthur-featured.jpg"
+              className="p-home__hero--img"
+              alt="Arthur"
+            />
           </li>
         </ul>
         <div className="p-home__heroes--list">
-          <a href="#hero-1">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/3fa6fb1c1695570e79df259229e7a6c9583ff18becc9f1.png" />
+          <a
+            href="#hero-1"
+            className={activeHero === 1 ? "active" : ""}
+            onClick={(e) => handleHeroClick(1, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/3fa6fb1c1695570e79df259229e7a6c9583ff18becc9f1.png"
+              alt="Krixi thumbnail"
+            />
           </a>
-          <a href="#hero-2" className="active">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/83d9de6ce9963f9ea406db2edd81707f5ee04e755f2a71-2.jpg" />
+          <a
+            href="#hero-2"
+            className={activeHero === 2 ? "active" : ""}
+            onClick={(e) => handleHeroClick(2, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/83d9de6ce9963f9ea406db2edd81707f5ee04e755f2a71-2.jpg"
+              alt="Valhein thumbnail"
+            />
           </a>
-          <a href="#hero-3">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/8decfe0a19adf4c0db504a34dedb271e658d3f1133b0a1.jpg" />
+          <a
+            href="#hero-3"
+            className={activeHero === 3 ? "active" : ""}
+            onClick={(e) => handleHeroClick(3, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/8decfe0a19adf4c0db504a34dedb271e658d3f1133b0a1.jpg"
+              alt="Aya thumbnail"
+            />
           </a>
-          <a href="#hero-4">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/6ee0ca6c7839effd7b244bbe29f50a9e5d256414acc441.jpg" />
+          <a
+            href="#hero-4"
+            className={activeHero === 4 ? "active" : ""}
+            onClick={(e) => handleHeroClick(4, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/05/6ee0ca6c7839effd7b244bbe29f50a9e5d256414acc441.jpg"
+              alt="Triêu Vân thumbnail"
+            />
           </a>
-          <a href="#hero-5">
-            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Honeyview_Arthur_111-e1718875297358.jpg" />
+          <a
+            href="#hero-5"
+            className={activeHero === 5 ? "active" : ""}
+            onClick={(e) => handleHeroClick(5, e)}
+          >
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Honeyview_Arthur_111-e1718875297358.jpg"
+              alt="Arthur thumbnail"
+            />
           </a>
         </div>
       </div>

@@ -38,22 +38,26 @@
 }
 
 /* Heroes Section Styles */
+.p-home__heroes {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
 .p-home__heroes--title {
   align-items: center;
   background-image: url("https://lienquan.garena.vn/wp-content/themes/aov-2024/assets/img/bg-home-heroes.jpg");
-  background-position: 0px 0px;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  font-family: UTM Helve;
-  font-size: 1.1575px;
-  font-weight: 500;
+  font-family: "UTM Helve", sans-serif;
   justify-content: center;
-  line-height: 1.389px;
-  margin: 0px 0px 0.289375px;
-  text-align: left;
+  text-align: center;
   height: 200px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -62,10 +66,10 @@
     rgb(189, 152, 103) 0%,
     rgb(252, 227, 188) 100%
   );
-  font-size: 30.095px;
+  font-size: clamp(24px, 4vw, 40px);
   font-weight: 700;
-  line-height: 42.133px;
-  padding: 0px 0px 18.52px;
+  line-height: 1.2;
+  padding: 20px;
   text-align: center;
   text-transform: uppercase;
   -webkit-background-clip: text;
@@ -73,36 +77,262 @@
   background-clip: text;
 }
 
+/* Heroes Main Container */
+.p-home__heroes--main {
+  position: relative;
+  height: 85vh;
+  min-height: 600px;
+  padding-bottom: 0;
+}
+
+/* Heroes Content Container */
+.p-home__heroes--content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Hero Item */
+.p-home__hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateX(-50px);
+  overflow: hidden;
+}
+
+/* Active Hero */
+.p-home__hero.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Hero Image - FULL WIDTH BACKGROUND */
+.p-home__hero--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.p-home__hero.active .p-home__hero--img {
+  transform: scale(1.02);
+}
+
+/* Hero Left Side - Content và Video OVERLAY */
+.p-home__hero--left {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: calc(40% - 4rem);
+  max-width: 350px;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+/* Hero Content Area */
+.p-home__hero--content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 /* Hero Name Styles */
 .p-home__hero--name {
   color: #edbe80;
-  font-family: UTM Helve;
-  font-size: 26.0438px;
+  font-family: "UTM Helve", sans-serif;
+  font-size: clamp(20px, 3vw, 32px);
   font-weight: 700;
-  line-height: 28.6481px;
-  margin: 0px 0px 16.205px;
+  line-height: 1.1;
+  margin: 0;
   text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: slideInLeft 0.6s ease-out;
 }
 
-/* Hero Role P Tag Styles */
+/* Hero Role Styles */
+.p-home__hero--role {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.p-home__hero--role img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 .p-home__hero--role p {
   color: #fff;
-  font-family: UTM Helve;
-  font-size: 14.4687px;
-  line-height: 17.3625px;
-  margin: 0px 0px 0px 9.26px;
+  font-family: "UTM Helve", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 1.4;
+  margin: 0;
   text-align: left;
 }
 
-/* Hero List Styles */
-@media (min-width: 750px) {
-  .p-home__heroes--list {
-    bottom: 51rem;
-    right: 213rem;
+/* Hero Video Styles */
+.p-home__hero--video {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  animation: slideInBottom 1s ease-out;
+}
+
+.p-home__hero--video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Hero More Button */
+.p-home__hero--more {
+  display: inline-block;
+  background: linear-gradient(45deg, #edbe80, #bd9867);
+  color: #1a1a2e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-align: center;
+  max-width: 120px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.p-home__hero--more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(237, 190, 128, 0.4);
+}
+
+/* Hero List Navigation */
+.p-home__heroes--list {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  z-index: 3;
+}
+
+.p-home__heroes--list a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.p-home__heroes--list a:hover,
+.p-home__heroes--list a.active {
+  border-color: #edbe80;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.p-home__heroes--list a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-.p-home__heroes--list {
-  display: flex;
-  position: absolute;
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .p-home__hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .p-home__hero--left {
+    width: 100%;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+
+  .p-home__hero--img {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .p-home__hero--content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .p-home__heroes--list {
+    bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .p-home__heroes--list a {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p-home__hero {
+    padding: 1rem;
+  }
+
+  .p-home__heroes--list a {
+    width: 50px;
+    height: 50px;
+  }
 }
