@@ -654,6 +654,12 @@
   transition: all 0.3s ease;
   width: 100%;
   max-width: 120px;
+  color: #0056b3;
+  font-family: UTM Helve;
+  font-size: 13.3917px;
+  line-height: 20.0875px;
+  margin: 6.69583px;
+  text-align: left;
 }
 
 .st-heroes__item:hover {
