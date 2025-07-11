@@ -285,6 +285,8 @@ const GameplaySection = () => {
                   margin: 0,
                   padding: 0,
                   listStyle: "none",
+                  flexWrap: "nowrap",
+                  gap: "10px",
                 }}
               >
                 <li>
