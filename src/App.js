@@ -66,44 +66,96 @@ function App() {
       <header className="relative bg-gradient-to-r from-purple-900 via-blue-900 to-purple-800 px-4 py-3">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="text-white text-xl font-bold flex items-center">
-              <svg
-                className="w-6 h-6 text-yellow-400 mr-2"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" />
-                <path d="M2 17L12 22L22 17" />
-                <path d="M2 12L12 17L22 12" />
-              </svg>
-              LIÊN QUÂN
-            </div>
+          <div className="flex items-center">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/02/logo.png"
+              alt="Liên Quân Logo"
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 text-white text-sm font-medium">
-            <a
-              href="#"
-              className="hover:text-yellow-400 transition border-b-2 border-yellow-400 pb-1"
-            >
-              TRANG CHỦ
-            </a>
-            <a href="#" className="hover:text-yellow-400 transition">
-              GAMEPLAY
-            </a>
-            <a href="#" className="hover:text-yellow-400 transition">
-              TIN TỨC
-            </a>
-            <a href="#" className="hover:text-yellow-400 transition">
-              CẬP NHẬT
-            </a>
-            <a href="#" className="hover:text-yellow-400 transition">
-              HỢP TÁC
-            </a>
-            <a href="#" className="hover:text-yellow-400 transition">
-              LIÊN KẾT
-            </a>
+          <nav className="hidden md:flex items-center space-x-6">
+            <ul className="flex items-center space-x-6">
+              <li className="menu-item menu-item-home current-menu-item">
+                <a
+                  href="https://lienquan.garena.vn/"
+                  className="flex items-center text-white hover:text-yellow-400 transition border-b-2 border-yellow-400 pb-1"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="Home"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">Trang chủ</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#"
+                  className="flex items-center text-white hover:text-yellow-400 transition"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="Gameplay"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">GAMEPLAY</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#"
+                  className="flex items-center text-white hover:text-yellow-400 transition"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="News"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">TIN TỨC</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#"
+                  className="flex items-center text-white hover:text-yellow-400 transition"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="Updates"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">CẬP NHẬT</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#"
+                  className="flex items-center text-white hover:text-yellow-400 transition"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="Cooperation"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">HỢP TÁC</span>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a
+                  href="#"
+                  className="flex items-center text-white hover:text-yellow-400 transition"
+                >
+                  <img
+                    src="https://lienquan.garena.vn/wp-content/uploads/2024/07/icon-gameplay.png"
+                    alt="Links"
+                    className="w-4 h-4 mr-2"
+                  />
+                  <span className="text-sm font-medium">LIÊN KẾT</span>
+                </a>
+              </li>
+            </ul>
           </nav>
 
           {/* Search */}
@@ -221,7 +273,7 @@ function App() {
               <div className="p-4 bg-slate-800">
                 <div className="text-gray-400 text-xs mb-2">08.07.2025</div>
                 <h3 className="text-white text-sm font-bold leading-tight">
-                  TỔNG HỢP SỰ KIỆN - NGÀY HỘI LIÊN QUÂN - HỆ XẤP XINH - QUÀ HOT
+                  TỔNG HỢP SỰ KIỆN - NGÀY H��I LIÊN QUÂN - HỆ XẤP XINH - QUÀ HOT
                 </h3>
               </div>
             </div>
