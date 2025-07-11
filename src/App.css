@@ -231,7 +231,7 @@
 /* Hero List Navigation */
 .p-home__heroes--list {
   position: absolute;
-  bottom: 2rem;
+  bottom: 4rem;
   right: 2rem;
   display: flex;
   flex-direction: row;
