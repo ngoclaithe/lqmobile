@@ -155,7 +155,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/hoc-vien/che-do-choi/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    Chế độ chơi
+                    Chế đ��� chơi
                   </a>
                 </li>
               </ul>
@@ -471,7 +471,7 @@ const PostsSection = () => {
                 className="w-full h-48 object-cover"
               />
             </picture>
-            <div className="p-4">
+            <div className="p-4" style={{ color: "#0f172a" }}>
               <p className="text-gray-400 text-sm mb-2">08.07.2025</p>
               <h3 className="text-white font-bold text-sm leading-tight group-hover:text-yellow-400 transition-colors">
                 TỔNG HỢP SỰ KIỆN – NGÀY HỘI LIÊN QUÂN – HÈ XẬP XÌNH – QUÀ SẬP
