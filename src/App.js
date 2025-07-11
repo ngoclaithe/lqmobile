@@ -220,7 +220,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/tin-tuc/cam-nang/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    C��m nang
+                    Cẩm nang
                   </a>
                 </li>
               </ul>
@@ -608,8 +608,19 @@ const PostsSection = () => {
         <div className="text-center">
           <a
             href="https://lienquan.garena.vn/tin-tuc/"
-            className="p-home__posts--btn btn-more inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 rounded-lg transition-colors"
+            className="p-home__posts--btn btn-more inline-block rounded-lg transition-colors"
             title="Xem thêm"
+            style={{
+              width: "160.89px",
+              height: "35.3px",
+              color: "#EDBE80",
+              fontSize: "12.0091px",
+              fontFamily: '"UTM Helve", sans-serif',
+              margin: "26.0437px 467.562px 0px 467.55px",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             Xem thêm
           </a>
