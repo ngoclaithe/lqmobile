@@ -282,13 +282,15 @@ const GameplaySection = () => {
               <ul
                 className="st-heroes__types"
                 style={{
-                  display: "flex",
+                  display: "flex !important",
                   alignItems: "center",
                   margin: 0,
                   padding: 0,
                   listStyle: "none",
-                  flexWrap: "nowrap",
+                  flexWrap: "nowrap !important",
                   gap: "10px",
+                  whiteSpace: "nowrap",
+                  flexDirection: "row !important",
                 }}
               >
                 <li>
