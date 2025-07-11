@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* Heroes Section Styles */
+@media (min-width: 750px) {
+  .p-home__heroes--title {
+    height: 224rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./../img/bg-home-heroes.jpg) 0 0 / 100% 100% no-repeat;
+  }
+}
+
+.p-home__heroes--title {
+  width: 100%;
+}
+
+.title {
+  font-size: 52rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 1.4em;
+  padding-bottom: 32rem;
+  background: #fce3bc;
+  background: -webkit-linear-gradient(to top, #bd9867 0%, #fce3bc 100%);
+  background: -moz-linear-gradient(to top, #bd9867 0%, #fce3bc 100%);
+  background: linear-gradient(to top, #bd9867 0%, #fce3bc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
