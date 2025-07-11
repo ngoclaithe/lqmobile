@@ -811,7 +811,21 @@ const HeroesSection = () => {
   return (
     <section className="p-home__heroes">
       <h2 className="p-home__heroes--title">
-        <span className="title">TƯỚNG & TRANG PHỤC ĐA DẠNG</span>
+        <span
+          className="title"
+          style={{
+            backgroundImage:
+              "linear-gradient(to top, rgb(189, 152, 103) 0%, rgb(252, 227, 188) 100%)",
+            fontSize: "30.095px",
+            fontWeight: "700",
+            lineHeight: "42.133px",
+            padding: "0px 0px 18.52px",
+            textAlign: "center",
+            textTransform: "uppercase",
+          }}
+        >
+          TƯỚNG & TRANG PHỤC ĐA DẠNG
+        </span>
       </h2>
       <div className="p-home__heroes--main">
         <ul className="p-home__heroes--content">
