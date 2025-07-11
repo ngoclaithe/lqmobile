@@ -10,6 +10,12 @@ const DownloadWidget = () => {
         <img
           src="https://dl.ops.kgvn.garenanow.com/hok/DailyActivity/18%2B.png"
           alt="18+ Warning"
+          style={{
+            display: "inline",
+            fontSize: "11.575px",
+            lineHeight: "17.3625px",
+            textAlign: "left",
+          }}
           className="w-20 h-auto"
         />
       </div>
@@ -221,7 +227,7 @@ const Header = () => {
                     href="https://lienquan.garena.vn/tin-tuc/hop-tac/"
                     className="block px-4 py-2 text-white hover:bg-slate-700 hover:text-yellow-400 text-sm"
                   >
-                    H��p tác
+                    Hợp tác
                   </a>
                 </li>
                 <li>
@@ -800,6 +806,218 @@ const ChampionSection = () => {
   );
 };
 
+// Heroes Section Component
+const HeroesSection = () => {
+  return (
+    <section className="p-home__heroes">
+      <h2 className="p-home__heroes--title">
+        <span className="title">TƯỚNG & TRANG PHỤC ĐA DẠNG</span>
+      </h2>
+      <div className="p-home__heroes--main">
+        <ul className="p-home__heroes--content">
+          <li className="p-home__hero" id="hero-1">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Krixi-featured.jpg"
+              className="p-home__hero--img"
+            />
+            <div className="p-home__hero--content">
+              <h3 className="p-home__hero--name">
+                Krixi
+                <br />
+                Tinh Linh Thiên Nhiên
+              </h3>
+              <div className="p-home__hero--role">
+                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/phap-su-2.png" />
+                <p>
+                  Vị trí:
+                  <br />
+                  Pháp sư, Cấu rỉa
+                </p>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/krixi/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
+            </div>
+          </li>
+          <li className="p-home__hero active" id="hero-2">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Val.jpg"
+              className="p-home__hero--img"
+            />
+            <div className="p-home__hero--content">
+              <h3 className="p-home__hero--name">
+                Valhein
+                <br />
+                Thợ Săn Ác Quỷ
+              </h3>
+              <div className="p-home__hero--role">
+                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/xa-thu-2.png" />
+                <p>
+                  Vị trí:
+                  <br />
+                  Xạ thủ
+                </p>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/valhein/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
+            </div>
+          </li>
+          <li className="p-home__hero" id="hero-3">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Aya.jpg"
+              className="p-home__hero--img"
+            />
+            <div className="p-home__hero--content">
+              <h3 className="p-home__hero--name">
+                Aya
+                <br />
+                Ca Sĩ Tinh Linh
+              </h3>
+              <div className="p-home__hero--role">
+                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/ho-tro-2.png" />
+                <p>
+                  Vị trí:
+                  <br />
+                  Trợ thủ
+                </p>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aya/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
+            </div>
+          </li>
+          <li className="p-home__hero" id="hero-4">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/trieu-van.jpg"
+              className="p-home__hero--img"
+            />
+            <div className="p-home__hero--content">
+              <h3 className="p-home__hero--name">
+                Triêu Vân
+                <br />
+                Kỵ Sĩ Rồng
+              </h3>
+              <div className="p-home__hero--role">
+                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png" />
+                <p>
+                  Vị trí:
+                  <br />
+                  Đấu sĩ
+                </p>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/trieu-van/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
+            </div>
+          </li>
+          <li className="p-home__hero" id="hero-5">
+            <img
+              src="https://lienquan.garena.vn/wp-content/uploads/2024/06/arthur-featured.jpg"
+              className="p-home__hero--img"
+            />
+            <div className="p-home__hero--content">
+              <h3 className="p-home__hero--name">
+                Arthur
+                <br />
+                Thanh Gươm Chính Nghĩa
+              </h3>
+              <div className="p-home__hero--role">
+                <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Warrior_Icon.png" />
+                <p>
+                  Vị trí:
+                  <br />
+                  Đấu sĩ
+                </p>
+              </div>
+              <div className="p-home__hero--video">
+                <iframe
+                  src="https://www.youtube.com/embed/yA1U8ftafwA"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <a
+                href="https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/"
+                className="p-home__hero--more btn-more"
+                title="Xem thêm"
+              >
+                Xem thêm
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div className="p-home__heroes--list">
+          <a href="#hero-1">
+            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/3fa6fb1c1695570e79df259229e7a6c9583ff18becc9f1.png" />
+          </a>
+          <a href="#hero-2" className="active">
+            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/83d9de6ce9963f9ea406db2edd81707f5ee04e755f2a71-2.jpg" />
+          </a>
+          <a href="#hero-3">
+            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/8decfe0a19adf4c0db504a34dedb271e658d3f1133b0a1.jpg" />
+          </a>
+          <a href="#hero-4">
+            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/05/6ee0ca6c7839effd7b244bbe29f50a9e5d256414acc441.jpg" />
+          </a>
+          <a href="#hero-5">
+            <img src="https://lienquan.garena.vn/wp-content/uploads/2024/06/Honeyview_Arthur_111-e1718875297358.jpg" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // Main App Component
 function App() {
   return (
@@ -808,6 +1026,7 @@ function App() {
       <Header />
       <HeroSlider />
       <PostsSection />
+      <HeroesSection />
       <ChampionSection />
     </div>
   );
