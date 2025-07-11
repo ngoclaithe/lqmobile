@@ -780,6 +780,11 @@
     min-width: auto;
   }
 
+  /* Hide connecting line on mobile */
+  .academy-menu::before {
+    display: none;
+  }
+
   .academy-menu a {
     padding: 0.5rem;
     flex-direction: column;
