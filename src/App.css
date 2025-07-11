@@ -105,6 +105,7 @@
   visibility: hidden;
   transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform: translateX(-50px);
+  overflow: hidden;
 }
 
 /* Active Hero */
@@ -138,8 +139,8 @@
   left: 2rem;
   display: flex;
   flex-direction: column;
-  width: 400px;
-  max-width: 40%;
+  width: calc(40% - 4rem);
+  max-width: 350px;
   justify-content: flex-start;
   gap: 1.5rem;
   z-index: 2;
